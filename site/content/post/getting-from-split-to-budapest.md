@@ -1,7 +1,10 @@
 ---
-title: "How to get to Split, Croatia from Budapest, Hungary"
+title: "How to Get to Split From Budapest by Road!"
+subtitle: "Some kind of subtitle goes here I guess"
 date: 2017-09-15T19:35:06+02:00
-categories: travel
+categories: [travel]
+tags: [Budapest, Hungary, Split, Croatia, Bus, Train]
+author: Jayphen
 draft: true
 ---
 
