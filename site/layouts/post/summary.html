@@ -1,0 +1,14 @@
+<article class="ph3 flex-l center measure-wide mw8-l">
+  <header class="center mb3" style="min-width: 33%">
+    <a class="link color-inherit hover-pink" href="{{.RelPermalink}}">
+      <h2 class="f3 lh-title mb1">{{.Title}}</h2>
+    </a>
+    <span class="f6 db moon-gray">
+      Published on {{ dateFormat "Jan 2, 2006" .Date}}
+    </span>
+  </header>
+  <main class="center">
+    <div class="nested-links lh-copy">{{.Summary}}</div>
+    <a class="no-underline dib pa2 grow f7 bg-pink b white br2 ba" href="{{.RelPermalink}}">Read more</a>
+  </main>
+</article>

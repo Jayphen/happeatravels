@@ -3,3 +3,8 @@
  */
 @import "imports/reset.css";
 @import "imports/tachyons.css";
+
+:root {
+  --green: #618E61;
+  --pink: #DD9CDC;
+}

@@ -1,0 +1,10 @@
+.nested-links a {
+  color: var(--green);
+  @extend .link;
+  @extend .b;
+}
+
+.nested-links a:hover,
+.nested-links a:focus {
+  color: var(--pink);
+}

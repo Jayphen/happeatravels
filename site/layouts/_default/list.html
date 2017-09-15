@@ -1,0 +1,10 @@
+{{ define "main" }}
+  <main class="lh-copy">
+    {{ range .Data.Pages }}
+      <header class="lh-solid ph4 measure-wide">
+        <a class="dark-gray hover-green link" href="{{.Permalink}}"><h1>{{ .Title}}</h1></a>
+      </header>
+      <article class="ph4 measure">{{ .Summary }}</article>
+    {{ end }}
+  </main>
+{{ end }}

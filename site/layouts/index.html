@@ -1,4 +1,29 @@
 {{ define "main" }}
-  <h1>{{ .Title }}</h1>
-  {{ .Content }}
+  <div class="overflow-hidden aspect-ratio aspect-ratio--16x9">
+    {{ range first 1 .Data.Pages }}
+      <a class="link" href="{{.RelPermalink}}">
+        <div class="grow cover aspect-ratio--object" style="background: url('https://images.unsplash.com/photo-1500078974918-738828bc0422?dpr=2&auto=compress,format&fit=crop&w=1200&q=80&cs=tinysrgb&crop=')">
+        <div class="aspect-ratio--object bg-black-80 hover-bg-black-70 bg-animate"></div>
+        </div>
+        <div style="pointer-events: none" class="flex aspect-ratio--object white">
+          <div class="self-center tc center">
+            <h2>
+              {{.Title}}
+            </h2>
+            <span class="f7 db white-60 ttu">
+              <span class="fw1">Posted on</span>
+              <span class="b">{{ dateFormat "Jan 2, 2006" .Date}}</span>
+              <span class="fw1">in</span>
+              <span class="b">{{.Params.categories}}</span>
+            </span>
+          </div>
+        </div>
+      </a>
+    {{ end }}
+  </div>
+  <div class="lh-copy">
+    {{ range first 10 .Data.Pages }}
+      {{ .Render "summary" }}
+    {{ end }}
+  </div>
 {{ end }}

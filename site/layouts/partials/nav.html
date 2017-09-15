@@ -1,0 +1,6 @@
+{{ $currentPage := . }}
+<ul class="list pa0 justify-center flex mw7 center flex-wrap mr0-ns ttu f6">
+  {{ range .Site.Menus.main }}
+    <li class="h-100"><a href="{{.URL}}" class="pv3 b ph2 ph3-m ph4-l h-100 black-70 link hover-pink flex items-center">{{ .Name }}</a></li>
+  {{ end }}
+</ul>

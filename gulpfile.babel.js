@@ -3,8 +3,10 @@ import {spawn} from "child_process";
 import hugoBin from "hugo-bin";
 import gutil from "gulp-util";
 import postcss from "gulp-postcss";
-import cssImport from "postcss-import";
 import cssnext from "postcss-cssnext";
+import atImport from "postcss-import";
+import atExtend from "postcss-extend";
+import mqpacker from "css-mqpacker";
 import sourcemaps from "gulp-sourcemaps";
 import BrowserSync from "browser-sync";
 import webpack from "webpack";
@@ -30,8 +32,10 @@ gulp.task("css", () => (
     .pipe(sourcemaps.init())
     .pipe(postcss(
       [
-        cssImport({from: "./src/css/main.css"}), 
-        cssnext()
+        atImport({from: "./src/css/main.css"}), 
+        atExtend(),
+        cssnext(),
+        mqpacker()
       ]
     ))
     .pipe(sourcemaps.write())
