@@ -1,12 +1,20 @@
 ---
-title: "How to Get to Split From Budapest by Road!"
-subtitle: "Some kind of subtitle goes here I guess"
-date: 2017-09-15T19:35:06+02:00
-categories: [travel]
-tags: [Budapest, Hungary, Split, Croatia, Bus, Train]
-author: Jayphen
+date: 2017-09-15T17:35:06.000Z
 draft: false
-featureImage: "https://images.unsplash.com/photo-1501763966092-9aa4ec850e12?dpr=2&auto=format&fit=crop&w=1199&h=674&q=80&cs=tinysrgb&crop="
+title: How to Get to Split From Budapest by Road!
+subtitle: Hello there isn't this great
+featureImage: >-
+  https://images.unsplash.com/photo-1501763966092-9aa4ec850e12?dpr=2&auto=format&fit=crop&w=1199&h=674&q=80&cs=tinysrgb&crop=
+categories:
+  - travel
+tags:
+  - Budapest
+  - Hungary
+  - Split
+  - Croatia
+  - Bus
+  - Train
+author: Jayphen
 ---
 
 Budapest is a beautiful city. It’s so beautiful that I blew 62 of my 90 Schengen days there exploring every ruin pub, eating every lángos, and walking every inch of the riverside.
