@@ -10,10 +10,31 @@
 }
 
 @media (--breakpoint-not-small) {
+
   .hero-post {
     & h2 {
-      background: HSLA(301, 45%, 54%, 0.95);
       padding: 0.3em;
     }
+    &.author--Jayphen h2 {
+      background: color(var(--green) alpha(-10%));
+    }
+    &.author--Ina h2 {
+      background: color(var(--pink) alpha(-10%));
+    }
+  }
+}
+/* Remove the shrink effect on click */
+.hero-post .grow:active {
+  transform: none;
+}
+
+/* Lil hack to use green highlights for Jayphen posts
+ Pink highlights for Ina posts */
+.author--Jayphen {
+  & .bg-pink {
+    background: var(--green);
+  }
+  & .hover-pink:hover {
+    color: var(--green);
   }
 }

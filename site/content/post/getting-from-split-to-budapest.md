@@ -6,6 +6,7 @@ categories: [travel]
 tags: [Budapest, Hungary, Split, Croatia, Bus, Train]
 author: Jayphen
 draft: true
+featureImage: "https://images.unsplash.com/photo-1501763966092-9aa4ec850e12?dpr=2&auto=format&fit=crop&w=1199&h=674&q=80&cs=tinysrgb&crop="
 ---
 
 Budapest is a beautiful city. It’s so beautiful that I blew 62 of my 90 Schengen days there exploring every ruin pub, eating every lángos, and walking every inch of the riverside.
