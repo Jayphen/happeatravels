@@ -1,10 +1,7 @@
 ---
-date: 2017-09-15T17:35:06.000Z
-draft: false
 title: How to Get to Split From Budapest by Road!
-subtitle: Hello there isn't this great
-featureImage: >-
-  https://images.unsplash.com/photo-1501763966092-9aa4ec850e12?dpr=2&auto=format&fit=crop&w=1199&h=674&q=80&cs=tinysrgb&crop=
+subtitle: It’s not a bad trip and it’s muuuch cheaper than flying
+date: 2017-09-15T17:35:06.000Z
 categories:
   - travel
 tags:
@@ -15,6 +12,9 @@ tags:
   - Bus
   - Train
 author: Jayphen
+draft: false
+featureImage: >-
+  https://images.unsplash.com/photo-1501763966092-9aa4ec850e12?dpr=2&auto=format&fit=crop&w=1199&h=674&q=80&cs=tinysrgb&crop=
 ---
 
 Budapest is a beautiful city. It’s so beautiful that I blew 62 of my 90 Schengen days there exploring every ruin pub, eating every lángos, and walking every inch of the riverside.
@@ -81,3 +81,4 @@ If your bus is the same as ours, it has a plug overhead for power and a seat for
 
 
 [^1]:	Dates listed are for 2017. They may be different in future years.
+
