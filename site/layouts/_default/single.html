@@ -2,11 +2,11 @@
   <div class="author--{{.Params.author}} overflow-hidden aspect-ratio aspect-ratio--16x9">
     <div class="cover aspect-ratio--object" style="background: url('{{.Params.featureImage}}')"></div>
   </div>
-  <header class="measure-wide ph3 f4 center">
+  <header class="measure-wide ph3 f5 center">
     <h1 class="lh-title f2">{{ .Title}}</h1>
     <span>{{ .Date.Format "Jan 2, 2006" }}</span>
   </header>
-  <article class="lh-copy f4 pa3 measure-wide center">
+  <article class="lh-copy f5 pa3 measure-wide center">
     {{ .Content }}
     <div class="mt4">
       {{ template "_internal/disqus.html" . }}
