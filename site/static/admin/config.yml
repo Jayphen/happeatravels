@@ -21,6 +21,6 @@ collections:
       - {label: "Body", name: "body", widget: "markdown"}
       - {label: "Categories", name: "categories", widget: "list"}
       - {label: "Tags", name: "tags", widget: "list"}
-      - {label: "Author" name: "author" options: ["Jayphen", "Ina"]}
+      - {label: "Author", name: "author", options: ["Jayphen", "Ina"]}
 
 
