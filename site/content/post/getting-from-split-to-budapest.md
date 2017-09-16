@@ -5,7 +5,7 @@ date: 2017-09-15T19:35:06+02:00
 categories: [travel]
 tags: [Budapest, Hungary, Split, Croatia, Bus, Train]
 author: Jayphen
-draft: true
+draft: false
 featureImage: "https://images.unsplash.com/photo-1501763966092-9aa4ec850e12?dpr=2&auto=format&fit=crop&w=1199&h=674&q=80&cs=tinysrgb&crop="
 ---
 
