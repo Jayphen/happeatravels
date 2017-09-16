@@ -6,5 +6,10 @@
     <h1 class="lh-title f2">{{ .Title}}</h1>
     <span>{{ .Date.Format "Jan 2, 2006" }}</span>
   </header>
-  <article class="lh-copy f4 pa3 measure-wide center">{{ .Content }}</article>
+  <article class="lh-copy f4 pa3 measure-wide center">
+    {{ .Content }}
+    <div class="mt4">
+      {{ template "_internal/disqus.html" . }}
+    </div>
+  </article>
 {{ end }}
