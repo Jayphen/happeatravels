@@ -1,6 +1,6 @@
 ---
 title: How to Get to Split From Budapest by Road!
-subtitle: It’s not a bad trip and it’s muuuch cheaper than flying
+subtitle: "Because flying isn’t an option \uD83D\uDE33"
 date: 2017-09-15T17:35:06.000Z
 categories:
   - travel
@@ -81,4 +81,5 @@ If your bus is the same as ours, it has a plug overhead for power and a seat for
 
 
 [^1]:	Dates listed are for 2017. They may be different in future years.
+
 
