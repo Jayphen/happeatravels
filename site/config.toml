@@ -4,3 +4,5 @@ languageLang = "en"
 title = "My new Victor-Hugo site"
 
 sectionPagesMenu = "main"
+
+disqusShortname = "happeatravels"
