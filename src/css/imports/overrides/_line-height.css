@@ -1,0 +1,26 @@
+/*
+
+   LINE HEIGHT / LEADING
+   Docs: http://tachyons.io/docs/typography/line-height
+
+   Media Query Extensions:
+     -ns = not-small
+     -m  = medium
+     -l  = large
+
+*/
+
+  .lh-copy  { line-height: 1.7; }
+
+@media (--breakpoint-not-small) {
+  .lh-copy-ns  { line-height: 1.7; }
+}
+
+@media (--breakpoint-medium) {
+  .lh-copy-m  { line-height: 1.7; }
+}
+
+@media (--breakpoint-large) {
+  .lh-copy-l  { line-height: 1.7; }
+}
+
