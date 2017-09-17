@@ -1,8 +1,8 @@
 ---
 date: 2017-09-15T17:35:06.000Z
 draft: false
-title: How to Get to Split From Budapest by Road!
-subtitle: Hello there isn't this great
+title: How to Get to Split From Budapest by Road
+subtitle: The best route, how to book tickets, and what the journey is like.
 featureImage: >-
   https://images.unsplash.com/photo-1501763966092-9aa4ec850e12?dpr=2&auto=format&fit=crop&w=1199&h=674&q=80&cs=tinysrgb&crop=
 categories:
