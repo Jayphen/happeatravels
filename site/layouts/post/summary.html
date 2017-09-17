@@ -1,27 +1,6 @@
 <article class="author--{{.Params.author}} ph3 flex-l center measure-wide mw8-l">
   <header class="center mb3 pr3-l" style="min-width: 33%">
-    <a class="link color-inherit hover-pink" href="{{.RelPermalink}}">
-      <h2 class="f3 fw5 lh-title mb1">{{.Params.subtitle}}</h2>
-    </a>
-    <div class="flex justify-between flex-wrap">
-      <span class="f6 dib mid-gray">
-        A {{ .ReadingTime }} minute read
-      </span>
-      <!-- Published on {{ dateFormat "Jan 2, 2006" .Date}} -->
-    </div>
+    {{ partial "post/meta" . }}
   </header>
-  <main class="center">
-    <div class="nested-links lh-copy">{{.Summary}}</div>
-    <div class="flex-ns justify-between flex-wrap">
-      <a class="no-underline dib pa2 grow f7 bg-pink b white br2 ba" href="{{.RelPermalink}}">Read more</a>
-      {{ with .Params.tags }}
-        <span class="f6 db dib-ns moon-gray tr-ns">
-          <!-- Loop through tags with comma delimiter -->
-          {{ range $i, $e := . }}
-            {{- if $i -}},{{ end }}<a href="/tags/{{. | urlize}}" class="color-inherit pv2 dib hover-pink link">{{ $e }}</a>
-          {{- end -}}
-        </span>
-      {{ end }}
-    </div>
-  </main>
+  {{ partial "post/summarised-post" . }}
 </article>
