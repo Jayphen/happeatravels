@@ -1,6 +1,6 @@
 {{ define "main" }}
   {{ $isHome := true }}
-  {{ range first 1 .Data.Pages }}
+  {{ range first 1 (where .Data.Pages "Section" "post") }}
     <div class="author--{{.Params.author}} hero-post overflow-hidden aspect-ratio aspect-ratio--16x9">
       <a class="link" href="{{.RelPermalink}}">
         <div class="grow cover aspect-ratio--object" style="background: url('{{.Params.featureImage}}')">
