@@ -3,7 +3,7 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://happeatravels.com/country/hungary/index.json</loc>
+    <loc>https://happeatravels.com/country/hungary/</loc>
     <lastmod>2017-09-18T19:31:24+00:00</lastmod>
   </url>
   
@@ -13,28 +13,12 @@
   </url>
   
   <url>
-    <loc>https://happeatravels.com/post/heyy/</loc>
-    <lastmod>2017-09-18T16:44:39+00:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://happeatravels.com/post/getting-from-split-to-budapest/</loc>
     <lastmod>2017-09-15T17:35:06+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://happeatravels.com/</loc>
-    <lastmod>2017-09-14T23:37:49+02:00</lastmod>
-  </url>
-  
-  <url>
     <loc>https://happeatravels.com/tags/budapest/</loc>
-    <lastmod>2017-09-15T17:35:06+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://happeatravels.com/tags/bus/</loc>
     <lastmod>2017-09-15T17:35:06+00:00</lastmod>
     <priority>0</priority>
   </url>
@@ -57,6 +41,12 @@
   </url>
   
   <url>
+    <loc>https://happeatravels.com/</loc>
+    <lastmod>2017-09-18T19:31:24+00:00</lastmod>
+    <priority>0</priority>
+  </url>
+  
+  <url>
     <loc>https://happeatravels.com/tags/hungary/</loc>
     <lastmod>2017-09-15T17:35:06+00:00</lastmod>
     <priority>0</priority>
@@ -64,7 +54,7 @@
   
   <url>
     <loc>https://happeatravels.com/post/</loc>
-    <lastmod>2017-09-18T16:44:39+00:00</lastmod>
+    <lastmod>2017-09-15T17:35:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
@@ -81,14 +71,8 @@
   </url>
   
   <url>
-    <loc>https://happeatravels.com/tags/train/</loc>
-    <lastmod>2017-09-15T17:35:06+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
     <loc>https://happeatravels.com/categories/travel/</loc>
-    <lastmod>2017-09-18T16:44:39+00:00</lastmod>
+    <lastmod>2017-09-15T17:35:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   

@@ -21,6 +21,9 @@
               {{ range $i, $e := .Params.categories }}
                 {{- if $i -}},{{ end }}<span class="b">{{ $e }}</span>
               {{- end -}}
+              {{ with .Site.GetPage "page" .Params.country }}
+                <img class="h1 br1 v-btm o-80 db center mt2" src="https://restcountries.eu/data/{{lower .Params.short}}.svg" alt="{{.Params.name}}">
+              {{ end }}
             </span>
           </div>
         </div>

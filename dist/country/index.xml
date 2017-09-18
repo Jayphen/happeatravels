@@ -13,19 +13,19 @@
     
     <item>
       <title>Hungary</title>
-      <link>/country/hungary/index.json</link>
+      <link>/country/hungary/</link>
       <pubDate>Mon, 18 Sep 2017 19:31:24 +0000</pubDate>
       
-      <guid>/country/hungary/index.json</guid>
-      <description></description>
+      <guid>/country/hungary/</guid>
+      <description>Testing content from Country view</description>
     </item>
     
     <item>
       <title>Australia</title>
-      <link>/country/australia/index.json</link>
+      <link>/country/australia/</link>
       <pubDate>Mon, 18 Sep 2017 19:29:59 +0200</pubDate>
       
-      <guid>/country/australia/index.json</guid>
+      <guid>/country/australia/</guid>
       <description></description>
     </item>
     
