@@ -3,6 +3,9 @@ languageCode = "en-us"
 languageLang = "en"
 title = "Happea Travels - a travel blog by Ina and Jayphen"
 
-sectionPagesMenu = "main"
-
 disqusShortname = "happeatravels"
+
+[[menu.main]]
+  name = "All posts"
+  identifier = "post"
+  url = "/post/"
