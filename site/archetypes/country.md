@@ -1,7 +1,9 @@
 ---
-name: Australia
-short: AUS
-continent: Oceania
+title:
+short:
+continent:
 outputs:
   - JSON
+date: {{ .Date }}
+draft: false
 ---
