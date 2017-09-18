@@ -21,13 +21,3 @@ fields:
     required: true
   label: Continent
   default: Asia
-- name: outputs
-  label: Outputs
-  type: list
-  hidden: ''
-  default:
-  - HTML
-  - JSON
-  config:
-    source:
-      type: datafiles
