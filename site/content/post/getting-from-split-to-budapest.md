@@ -1,22 +1,20 @@
 ---
-date: 2017-09-15T17:35:06.000Z
-draft: false
-title: How to Get to Split From Budapest by Road
-subtitle: The best route, how to book tickets, and what the journey is like.
-featureImage: >-
-  https://images.unsplash.com/photo-1501763966092-9aa4ec850e12?dpr=2&auto=format&fit=crop&w=1199&h=674&q=80&cs=tinysrgb&crop=
-categories:
-  - travel
-tags:
-  - Budapest
-  - Hungary
-  - Split
-  - Croatia
-  - Bus
-  - Train
 author: Jayphen
----
+categories:
+- travel
+date: 2017-09-15 17:35:06 +0000
+featureImage: https://images.unsplash.com/photo-1501763966092-9aa4ec850e12?dpr=2&auto=format&fit=crop&w=1199&h=674&q=80&cs=tinysrgb&crop=
+subtitle: The best route, how to book tickets, and what the journey is like.
+tags:
+- Budapest
+- Hungary
+- Split
+- Croatia
+title: How to Get to Split From Budapest by Road
+country: country/hungary.md
+feature_image: ''
 
+---
 Budapest is a beautiful city. It’s so beautiful that I blew 62 of my 90 Schengen days there exploring every ruin pub, eating every lángos, and walking every inch of the riverside.
 
 Thankfully, for citizens of non-EU countries like myself, there is another beautiful city in a neighbouring country that is not currently part of the Schengen zone. 
