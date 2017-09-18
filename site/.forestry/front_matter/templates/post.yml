@@ -45,3 +45,12 @@ fields:
   type: text
   hidden: true
   default: ''
+- type: select
+  config:
+    source:
+      type: datafiles
+      file: countries-yml
+      path: countries
+  label: Country
+  name: country
+  description: Which country is this post about?
