@@ -9,4 +9,6 @@ webhook_url:
 sections:
   post:
     default_front_matter_template: post
+  country:
+    default_front_matter_template: country
 version: '0.26'
