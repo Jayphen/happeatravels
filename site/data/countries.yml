@@ -3,7 +3,7 @@ countries:
   - 
     continent: Oceania
     name: Australia
-    short: AUS
+    short: "AUS"
   - 
     continent: Europe
     name: Hungary
