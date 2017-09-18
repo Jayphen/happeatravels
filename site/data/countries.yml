@@ -1,12 +1,11 @@
-Australia:
-  name: Australia
-  short: AUS
-  continent: Oceania
-Hungary:
-  name: Hungary
-  short: HUN
-  continent: Europe
-Croatia:
-  name: Croatia
-  short: HRV
-  continent: Europe
+---
+countries:
+  - name: Australia
+    short: AUS
+    continent: Oceania
+  - name: Hungary
+    short: HUN
+    continent: Europe
+  - name: Croatia
+    short: HRV
+    continent: Europe
