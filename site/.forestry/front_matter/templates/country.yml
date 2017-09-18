@@ -5,17 +5,17 @@ fields:
   label: Name
   type: text
   hidden: false
-  default: Australia
+  default: ''
 - name: short
   label: Short
   type: text
   hidden: false
-  default: AUS
+  default: ''
 - name: continent
   label: Continent
   type: text
   hidden: false
-  default: Oceania
+  default: ''
 - name: outputs
   label: Outputs
   type: list
