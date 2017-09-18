@@ -2,7 +2,7 @@
 author: ""
 categories: [travel]
 date: {{ .Date }}
-featureImage: ""
+feature_image: ""
 subtitle: ""
 tags: []
 title: ""
