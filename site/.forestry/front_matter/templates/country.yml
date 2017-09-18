@@ -1,0 +1,27 @@
+---
+hide_body: false
+fields:
+- name: name
+  label: Name
+  type: text
+  hidden: false
+  default: Australia
+- name: short
+  label: Short
+  type: text
+  hidden: false
+  default: AUS
+- name: continent
+  label: Continent
+  type: text
+  hidden: false
+  default: Oceania
+- name: outputs
+  label: Outputs
+  type: list
+  hidden: true
+  default:
+  - JSON
+  config:
+    source:
+      type: datafiles
