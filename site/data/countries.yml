@@ -3,12 +3,12 @@ countries:
   - 
     continent: Oceania
     name: Australia
-    short: "AUS"
+    shortcode: "AUS"
   - 
     continent: Europe
     name: Hungary
-    short: HUN
+    shortcode: HUN
   - 
     continent: Europe
     name: Croatia
-    short: HRV
+    shortcode: HRV
