@@ -26,7 +26,7 @@ Croatia is the perfect place to spend summer, especially if you are traveling fo
 My favourite time to be in Split is May to June, and September to October. By mid-to-late June, the city is absolutely packed full of tourists, so it’s nice to get there a little bit earlier and spend some time in the Croatian sun without having to share your beach towel with a stranger.
 
 ## Transport links from Budapest to Split
-<div class="tldr">
+<div class="tldr pa3 bg-black-10 br3">
 There is no direct flight.
 From 17 June - 1 September, there are overnight trains Tue, Fri, Sun.<br>
 The rest of the year (or if you want scenery), travel to Zagreb by train and then to Split by bus.
