@@ -22,6 +22,12 @@ collections:
       - {label: "Categories", name: "categories", widget: "list"}
       - {label: "Tags", name: "tags", widget: "list"}
       - {label: "Author", name: "author", widget: "select", options: ["Jayphen", "Ina"]}
+      - label: 'Country'
+      - name: 'country'
+      - widget: relation
+      - collection: countries
+      - searchFields: [name]
+      - valueField: name
 
   - name: "countries"
     label: "Countries"
