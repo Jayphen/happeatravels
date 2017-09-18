@@ -13,7 +13,6 @@ tags:
 - Split
 - Croatia
 title: How to Get to Split From Budapest by Road
-draft: true
 
 ---
 Budapest is a beautiful city. It’s so beautiful that I blew 62 of my 90 Schengen days there exploring every ruin pub, eating every lángos, and walking every inch of the riverside.
