@@ -1,10 +1,9 @@
 {{ define "main" }}
-  {{ $isHome := true }}
   {{ range first 1 (where .Data.Pages "Section" "post") }}
     <div class="author--{{.Params.author}} hero-post overflow-hidden aspect-ratio aspect-ratio--16x9">
       <a class="link" href="{{.RelPermalink}}">
         <div class="grow cover aspect-ratio--object" style="background: url('{{.Params.featureImage}}')">
-        <div class="aspect-ratio--object bg-black-20 hover-bg-black-40 bg-animate"></div>
+          <div class="aspect-ratio--object bg-black-20 hover-bg-black-40 bg-animate"></div>
         </div>
         <div style="pointer-events: none" class="flex aspect-ratio--object white">
           <div class="self-center tc center">
@@ -12,17 +11,9 @@
               <span>{{.Title}}</span>
             </h2>
             <span class="f7 f6-l db near-white ttu">
-              <span class="fw1">Posted by</span>
-              <span class="b">{{ .Params.author }}</span>
-              <span class="fw1">on</span>
-              <span class="b">{{ dateFormat "Jan 2 2006" .Date}}</span>
-              <span class="fw1">in</span>
-              <!-- Loop through categories with comma delimiter -->
-              {{ range $i, $e := .Params.categories }}
-                {{- if $i -}},{{ end }}<span class="b">{{ $e }}</span>
-              {{- end -}}
+              {{ partial "post/posted_by" . }}
               {{ with .Site.GetPage "page" .Params.country }}
-                <img class="h1 br1 v-btm o-80 db center mt2" src="https://restcountries.eu/data/{{lower .Params.short}}.svg" alt="{{.Params.name}}">
+                {{ partial "helpers/country_flag" (dict "context" .) }}
               {{ end }}
             </span>
           </div>
@@ -34,9 +25,11 @@
     </div>
   {{ end }}
 
-  <!-- <div class="lh-copy">
-    {{ range first 10 .Data.Pages }}
-      {{ .Render "summary" }}
-    {{ end }}
-  </div> -->
+  {{ if gt 1 (len .Data.Pages) }}
+    <div class="lh-copy mb6 f4">
+      {{ range first 10 (after 1 .Data.Pages) }}
+        {{ .Render "summary" }}
+      {{ end }}
+    </div>
+  {{ end }}
 {{ end }}
