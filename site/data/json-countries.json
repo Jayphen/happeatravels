@@ -1,0 +1,19 @@
+{
+	"countries": [
+		{
+			"continent": "Oceania",
+			"name": "Australia",
+			"shortcode": "AUS"
+		},
+		{
+			"continent": "Europe",
+			"name": "Hungary",
+			"shortcode": "HUN"
+		},
+		{
+			"continent": "Europe",
+			"name": "Croatia",
+			"shortcode": "HRV"
+		}
+	]
+}
