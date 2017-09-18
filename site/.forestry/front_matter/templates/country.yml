@@ -19,8 +19,9 @@ fields:
 - name: outputs
   label: Outputs
   type: list
-  hidden: true
+  hidden: ''
   default:
+  - HTML
   - JSON
   config:
     source:
