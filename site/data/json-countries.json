@@ -1,14 +1,10 @@
-[
-	{
-		"Australia": {
-			"continent": "Oceania",
-			"shortcode": "AUS"
-		}
+{
+	"Australia": {
+		"continent": "Oceania",
+		"shortcode": "AUS"
 	},
-	{
-		"Hungary": {
-			"continent": "Europe",
-			"shortcode": "HUN"
-		}
+	"Hungary": {
+		"continent": "Europe",
+		"shortcode": "HUN"
 	}
-]
+}
