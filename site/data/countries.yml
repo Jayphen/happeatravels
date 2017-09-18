@@ -1,6 +1,8 @@
-- continent: Oceania
-  name: Australia
-- continent: Europe
-  name: Hungary
-- continent: Europe
-  name: Croatia
+---
+countries:
+- name: Australia
+  continent: Oceania
+- name: Hungary
+  continent: Europe
+- name: Croatia
+  continent: Europe
