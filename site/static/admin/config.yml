@@ -29,12 +29,15 @@ collections:
       - searchFields: [name]
       - valueField: name
 
-  - name: "countries"
-    label: "Countries"
-    file: "site/data/countries.yml"
-    widget: "list"
-    fields:
-      - {label: "Country Name", name: "name", widget: "string"}
-      - {label: "Continent", name: "continent", widet: "select", option: ["Africa", "Asia", "Europe", "North America", "Oceania", "South America"]}
-
-
+  - name: "data"
+    label: "Site Data"
+    editor:
+      preview: false
+    files:
+      - name: "countries"
+        label: "Countries"
+        file: "site/data/countries.yml"
+        widget: "list"
+        fields:
+          - {label: "Country Name", name: "name", widget: "string"}
+          - {label: "Continent", name: "continent", widet: "select", option: ["Africa", "Asia", "Europe", "North America", "Oceania", "South America"]}
