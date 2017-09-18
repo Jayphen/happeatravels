@@ -46,11 +46,10 @@ fields:
   hidden: true
   default: ''
 - type: select
+  name: country
   config:
     source:
-      type: datafiles
-      file: countries-yml
-      path: countries
+      type: pages
+      section: country
   label: Country
-  name: country
   description: Which country is this post about?
