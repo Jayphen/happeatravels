@@ -1,4 +1,3 @@
-continent: Oceania
 country:
   - continent: Oceania
     name: Australia
@@ -6,4 +5,3 @@ country:
     name: Hungary
   - continent: Europe
     name: Croatia
-name: Australia
