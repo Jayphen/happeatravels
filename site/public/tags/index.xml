@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes" ?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Tags on Happea Travels - a travel blog by Ina and Jayphen</title>
+    <link>/tags/</link>
+    <description>Recent content in Tags on Happea Travels - a travel blog by Ina and Jayphen</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>en-us</language>
+    <lastBuildDate>Fri, 15 Sep 2017 17:35:06 +0000</lastBuildDate>
+    
+	<atom:link href="/tags/index.xml" rel="self" type="application/rss+xml" />
+    
+    
+    <item>
+      <title>Budapest</title>
+      <link>/tags/budapest/</link>
+      <pubDate>Fri, 15 Sep 2017 17:35:06 +0000</pubDate>
+      
+      <guid>/tags/budapest/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Bus</title>
+      <link>/tags/bus/</link>
+      <pubDate>Fri, 15 Sep 2017 17:35:06 +0000</pubDate>
+      
+      <guid>/tags/bus/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Croatia</title>
+      <link>/tags/croatia/</link>
+      <pubDate>Fri, 15 Sep 2017 17:35:06 +0000</pubDate>
+      
+      <guid>/tags/croatia/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Hungary</title>
+      <link>/tags/hungary/</link>
+      <pubDate>Fri, 15 Sep 2017 17:35:06 +0000</pubDate>
+      
+      <guid>/tags/hungary/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Split</title>
+      <link>/tags/split/</link>
+      <pubDate>Fri, 15 Sep 2017 17:35:06 +0000</pubDate>
+      
+      <guid>/tags/split/</guid>
+      <description></description>
+    </item>
+    
+    <item>
+      <title>Train</title>
+      <link>/tags/train/</link>
+      <pubDate>Fri, 15 Sep 2017 17:35:06 +0000</pubDate>
+      
+      <guid>/tags/train/</guid>
+      <description></description>
+    </item>
+    
+  </channel>
+</rss>
