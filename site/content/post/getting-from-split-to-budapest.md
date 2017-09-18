@@ -4,8 +4,7 @@ categories:
 - travel
 country: country/hungary.md
 date: 2017-09-15 17:35:06 +0000
-featureImage: https://images.unsplash.com/photo-1501763966092-9aa4ec850e12?dpr=2&auto=format&fit=crop&w=1199&h=674&q=80&cs=tinysrgb&crop=
-feature_image: "/uploads/2017/09/18/IMG_5080.JPG"
+feature_image: "/uploads/2017/09/IMG_5080.JPG"
 subtitle: The best route, how to book tickets, and what the journey is like.
 tags:
 - Budapest
