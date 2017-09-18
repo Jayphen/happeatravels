@@ -1,7 +1,8 @@
 ---
-title: "some content"
-date: 2017-09-14T23:37:49+02:00
+title: some content
+date: 2017-09-14 23:37:49 +0200
+type: page
 draft: true
----
 
+---
 hooray 
