@@ -40,4 +40,4 @@ collections:
         widget: "list"
         fields:
           - {label: "Country Name", name: "name", widget: "string"}
-          - {label: "Continent", name: "continent", widet: "select", option: ["Africa", "Asia", "Europe", "North America", "Oceania", "South America"]}
+          - {label: "Continent", name: "continent", widget: "select", option: ["Africa", "Asia", "Europe", "North America", "Oceania", "South America"]}
