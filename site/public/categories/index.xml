@@ -2,20 +2,20 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
   <channel>
     <title>Categories on Happea Travels - a travel blog by Ina and Jayphen</title>
-    <link>http://happeatravels.com/categories/</link>
+    <link>https://happeatravels.com/categories/</link>
     <description>Recent content in Categories on Happea Travels - a travel blog by Ina and Jayphen</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
     
-	<atom:link href="http://happeatravels.com/categories/index.xml" rel="self" type="application/rss+xml" />
+	<atom:link href="https://happeatravels.com/categories/index.xml" rel="self" type="application/rss+xml" />
     
     
     <item>
       <title>Travel</title>
-      <link>http://happeatravels.com/categories/travel/</link>
+      <link>https://happeatravels.com/categories/travel/</link>
       <pubDate>Mon, 18 Sep 2017 16:44:39 +0000</pubDate>
       
-      <guid>http://happeatravels.com/categories/travel/</guid>
+      <guid>https://happeatravels.com/categories/travel/</guid>
       <description></description>
     </item>
     
