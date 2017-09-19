@@ -5,12 +5,11 @@
 @import "imports/tachyons.css";
 
 :root {
-  --green: #618E61;
+  --green: #2A2B2A;
   --pink: #DD9CDC;
 }
 
 @media (--breakpoint-not-small) {
-
   .hero-post {
     & h2 {
       padding: 0.3em;
@@ -48,4 +47,44 @@
   & h6 {
     font-family: Helvetica;
   }
+}
+
+@media (--breakpoint-not-small) {
+  .logo--overlay img {
+    height: 5rem;
+  }
+  .logo--overlay {
+    height: 0;
+    margin: 0 auto;
+    body.home & {
+      pointer-events: none!important;
+    }
+  }
+  .logo--moon {
+    background: color(white alpha(-10%));
+    top: 0;
+  }
+  .logo--title {
+    color: white;
+    &:after {
+      content: "";
+      border-top: 3px solid color(white alpha(-90%));
+      display: block;
+      width: 2.5rem;
+      height: 0;
+      margin: 0.5rem auto;
+    }
+  }
+
+}
+.logo--moon {
+  height: 5.6rem;
+  width: 5.6rem;
+  background: white;
+  border-radius: 3rem;
+  position: absolute;
+  top: -0.8rem;
+}
+.logo--title, .logo--moon {
+  margin-left: 0.6rem;
 }
