@@ -39,7 +39,7 @@ gulp.task("css", () => (
       ]
     ))
     .pipe(sourcemaps.write())
-    .pipe(gulp.dest("./dist/css"))
+    .pipe(gulp.dest("./static/css"))
     .pipe(browserSync.stream())
 ));
 
