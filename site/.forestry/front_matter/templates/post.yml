@@ -40,11 +40,6 @@ fields:
     - Ina
     - Jayphen
   label: Author
-- name: type
-  label: Type
-  type: text
-  hidden: true
-  default: ''
 - type: select
   name: country
   config:
