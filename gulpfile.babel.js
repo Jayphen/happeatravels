@@ -2,8 +2,11 @@ import gulp from "gulp";
 import {spawn} from "child_process";
 import hugoBin from "hugo-bin";
 import gutil from "gulp-util";
+import gulpif from "gulp-if";
+import yargs from "yargs";
 import postcss from "gulp-postcss";
 import cssnext from "postcss-cssnext";
+import cssnano from "gulp-cssnano";
 import atImport from "postcss-import";
 import atExtend from "postcss-extend";
 import mqpacker from "css-mqpacker";
@@ -13,6 +16,7 @@ import webpack from "webpack";
 import webpackConfig from "./webpack.conf";
 
 const browserSync = BrowserSync.create();
+const argv = yargs.argv;
 
 // Hugo arguments
 const hugoArgsDefault = ["-d", "../dist", "-s", "site", "-v"];
@@ -29,7 +33,7 @@ gulp.task("build-preview", ["css", "js"], (cb) => buildSite(cb, hugoArgsPreview,
 // Compile CSS with PostCSS
 gulp.task("css", () => (
   gulp.src("./src/css/*.css")
-    .pipe(sourcemaps.init())
+    .pipe(gulpif(!argv.production, sourcemaps.init()))
     .pipe(postcss(
       [
         atImport({from: "./src/css/main.css"}), 
@@ -38,7 +42,8 @@ gulp.task("css", () => (
         mqpacker()
       ]
     ))
-    .pipe(sourcemaps.write())
+    .pipe(gulpif(!argv.production, sourcemaps.write()))
+    .pipe(gulpif(argv.production, cssnano()))
     .pipe(gulp.dest("./site/static/css"))
     .pipe(browserSync.stream())
 ));
