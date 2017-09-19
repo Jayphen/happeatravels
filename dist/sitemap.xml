@@ -3,75 +3,74 @@
   xmlns:xhtml="http://www.w3.org/1999/xhtml">
   
   <url>
-    <loc>https://happeatravels.com/country/hungary/</loc>
+    <loc>/country/hungary/</loc>
     <lastmod>2017-09-18T19:31:24+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://happeatravels.com/country/australia/</loc>
+    <loc>/country/australia/</loc>
     <lastmod>2017-09-18T19:29:59+02:00</lastmod>
   </url>
   
   <url>
-    <loc>https://happeatravels.com/post/getting-from-split-to-budapest/</loc>
+    <loc>/post/getting-from-split-to-budapest/</loc>
     <lastmod>2017-09-15T17:35:06+00:00</lastmod>
   </url>
   
   <url>
-    <loc>https://happeatravels.com/tags/budapest/</loc>
+    <loc>/</loc>
+    <lastmod>2017-09-14T23:37:49+02:00</lastmod>
+  </url>
+  
+  <url>
+    <loc>/tags/budapest/</loc>
     <lastmod>2017-09-15T17:35:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://happeatravels.com/categories/</loc>
+    <loc>/categories/</loc>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://happeatravels.com/country/</loc>
+    <loc>/country/</loc>
     <lastmod>2017-09-18T19:31:24+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://happeatravels.com/tags/croatia/</loc>
+    <loc>/tags/croatia/</loc>
     <lastmod>2017-09-15T17:35:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://happeatravels.com/</loc>
-    <lastmod>2017-09-18T19:31:24+00:00</lastmod>
-    <priority>0</priority>
-  </url>
-  
-  <url>
-    <loc>https://happeatravels.com/tags/hungary/</loc>
+    <loc>/tags/hungary/</loc>
     <lastmod>2017-09-15T17:35:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://happeatravels.com/post/</loc>
+    <loc>/post/</loc>
     <lastmod>2017-09-15T17:35:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://happeatravels.com/tags/split/</loc>
+    <loc>/tags/split/</loc>
     <lastmod>2017-09-15T17:35:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://happeatravels.com/tags/</loc>
+    <loc>/tags/</loc>
     <lastmod>2017-09-15T17:35:06+00:00</lastmod>
     <priority>0</priority>
   </url>
   
   <url>
-    <loc>https://happeatravels.com/categories/travel/</loc>
+    <loc>/categories/travel/</loc>
     <lastmod>2017-09-15T17:35:06+00:00</lastmod>
     <priority>0</priority>
   </url>

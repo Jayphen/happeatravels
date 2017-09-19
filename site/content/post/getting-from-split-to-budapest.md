@@ -52,7 +52,6 @@ The best option is to catch the early train with no changes. This leaves from _K
 It’s not possible to buy your ticket for this train online. You have to buy it in-person at one of the international train stations –– Keleti, Kelenfold, or Deli. You will need to go to the counters, as the machines are jerks and don’t print international tickets.
 
 The timetable results don’t show the price by default -– it requires an extra step. First, enter your date of birth, and then click the ‘tickets and prices’ button.
-![](DraggedImage.png "How to get ticket prices")
 
 For an adult ticket, I paid **€19**.
 
