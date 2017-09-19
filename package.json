@@ -42,6 +42,7 @@
     "whatwg-fetch": "^2.0.3"
   },
   "devDependencies": {
+    "datocms-client": "^0.3.27",
     "gulp-cssnano": "^2.1.2",
     "gulp-if": "^2.0.2",
     "gulp-sourcemaps": "^2.6.1",
