@@ -12,8 +12,8 @@
             </h2>
             <span class="f7 f6-l db near-white ttu">
               {{ partial "post/posted_by" . }}
-              {{ with .Site.GetPage "page" .Params.country }}
-                {{ partial "helpers/country_flag" (dict "context" .) }}
+              {{ with .Params.country }}
+                {{ partial "helpers/country_flag" (dict "context" $ "country" .) }}
               {{ end }}
             </span>
           </div>
