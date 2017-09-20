@@ -3,6 +3,10 @@ disqusShortname = "happeatravels"
 languageCode = "en-us"
 languageLang = "en"
 title = "Happea Travels - a travel blog by Ina and Jayphen"
+[taxonomies]
+  tag = "tags"
+  category = "category"
+  author = "author"
 [[menu.main]]
 identifier = "post"
 name = "All posts"
