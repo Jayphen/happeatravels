@@ -2,13 +2,13 @@
 {{ $author_posts := len (where (where .Site.Pages "Section" "post") ".Params.author_id" .Params.author_id) }}
 
 <div class="flex justify-between flex-wrap flex-nowrap-ns">
-  <header class="measure">
+  <header class="measure-narrow">
     <h1 class="f3 f2-l lh-title mv0">{{.Title}}</h1>
     <h2 class="f5 f4-ns fw5 lh-title mb1 mt2 black-50">{{.Params.subtitle}}</h2>
   </header>
-  <a class="flex items-center meta-block mr-auto ml-auto-ns mr0-ns tl tr-ns mt3 mt0-ns lh-copy mb3 self-center link color-inherit hover-pink" href="/author/{{lower .Params.author}}">
+  <a class="flex flex-wrap-reverse items-center meta-block mr-auto ml-auto-ns mr0-ns tl tr-ns mt3 mt0-ns lh-copy mb3 self-center link color-inherit hover-pink" href="/author/{{lower .Params.author}}">
     <div class="dib order-1 mh2 order-0-ns">
-      <span class="f6 fw5 db">Post by {{.Params.author}}</span>
+      <span class="f6 nowrap fw5 db">Post by {{.Params.author}}</span>
       <span class="f7 fw5 db silver">Read all {{.Params.author}}'s {{$author_posts}} articles</span>
     </div>
     <img src="{{.Params.author_image}}auto=compress&h=100" class="h3 br-100" alt="{{.Params.author}}">
