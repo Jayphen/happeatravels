@@ -1,7 +1,7 @@
 <!-- Unfortunately there is no way to tell if this is the
 homepage from within the partial. This necessitates
 this different homepage partial. -->
-<article class="author--{{.Params.author}} ph3 center measure-wide">
+<article class="author--{{.Params.author.name}} ph3 center measure-wide">
   <header class="center mb3 pr3-l">
     {{ partial "post/meta--no-title" . }}
   </header>

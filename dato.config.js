@@ -12,7 +12,11 @@ module.exports = (dato, root, i18n) => {
           draft: post.draft,
           title: post.title,
           subtitle: post.subtitle,
-          author: post.author.firstName,
+          author: {
+            name: post.author.firstName,
+            picture: post.author.profilePicture.url(),
+            id: post.author.id
+          },
           type: "post",
           tags: post.tag.map(tag => tag.slug),
           category: post.category.name,

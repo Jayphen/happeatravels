@@ -1,6 +1,6 @@
 {{ define "main" }}
   {{ range first 1 (where .Data.Pages "Section" "post") }}
-    <div class="author--{{.Params.author}} hero-post overflow-hidden aspect-ratio aspect-ratio--16x9">
+    <div class="author--{{.Params.author.name}} hero-post overflow-hidden aspect-ratio aspect-ratio--16x9">
       <a class="link" href="{{.RelPermalink}}">
         <div class="grow cover aspect-ratio--object" style="background: url('{{.Params.feature_image}}'), url('{{.Params.feature_image}}?blur=100&px=50&w=1000')">
           <div class="aspect-ratio--object bg-black-20 hover-bg-black-40 bg-animate"></div>
