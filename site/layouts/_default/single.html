@@ -9,15 +9,15 @@
     </div>
     <article class="blog-post lh-copy">
 
-      {{ with .Params.intro }}
-        <div class="mw8 center ph3">
-          <div class="blog-post--intro georgia nested-links measure">{{. | markdownify}}</div>
-        </div>
-      {{ end }}
-
       {{ with .Params.feature_image}}
         <div class="mw8 center blog-post--feature-image mt4">
           <img style="pointer-events: none" src="{{.}}mw=1200">
+        </div>
+      {{ end }}
+
+      {{ with .Params.intro }}
+        <div class="mw8 center ph3">
+          <div class="blog-post--intro georgia nested-links measure-wide">{{. | markdownify}}</div>
         </div>
       {{ end }}
 
