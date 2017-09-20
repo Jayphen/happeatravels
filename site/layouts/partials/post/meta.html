@@ -1,10 +1,26 @@
-<a class="link color-inherit hover-pink" href="{{.RelPermalink}}">
-  <h1 class="f3 f2-l lh-title mv2">{{.Title}}</h1>
-  <h2 class="f5 f4-ns fw6 lh-title mb1 black-50">{{.Params.subtitle}}</h2>
-</a>
-<div class="flex justify-between flex-wrap">
-  <span class="f6 dib mid-gray">
-    A {{ .ReadingTime }} minute read
+
+{{ $author_posts := len (where (where .Site.Pages "Section" "post") ".Params.author" .Params.author) }}
+
+<div class="flex justify-between flex-wrap flex-nowrap-ns">
+  <header class="measure">
+    <h1 class="f3 f2-l lh-title mv0">{{.Title}}</h1>
+    <h2 class="f5 f4-ns fw5 lh-title mb1 mt2 black-50">{{.Params.subtitle}}</h2>
+  </header>
+  <a class="flex items-center meta-block mr-auto ml-auto-ns mr0-ns tl tr-ns mt3 mt0-ns lh-copy mb3 self-center link color-inherit hover-pink" href="/author/{{lower .Params.author}}">
+    <div class="dib order-1 mh2 order-0-ns">
+      <span class="f6 fw5 db">Post by {{.Params.author}}</span>
+      <span class="f7 fw5 db silver">Read {{.Params.author}}'s {{ $author_posts }} articles</span>
+    </div>
+    <img src="https://www.datocms-assets.com/3352/1505935708-11040848_10152678346132477_6713160288849467284_n.jpg?auto=compress&h=100" class="h3 br-100" alt="{{.Params.author}}">
+  </a>
+</div>
+<div class="flex mt2 justify-between relative">
+  <span class="bg-light-gray w-100 absolute z-0" style="height: 1px; top: 50%;"></span>
+  <span class="z-1 i silver f7 dib bg-white pr3 pv2">
+    Estimated reading time {{ .ReadingTime }} minutes
   </span>
-  <!-- Published on {{ dateFormat "Jan 2, 2006" .Date}} -->
+  <span class="no-underline z-1 bg-light-gray pa2 br2 f7 lh-title ttu dib fw5">
+    {{ .Params.category }}
+    <!-- Published on {{ dateFormat "Jan 2, 2006" .Date}} -->
+  </span>
 </div>
