@@ -1,10 +1,16 @@
 {{ define "main" }}
+  {{ range first 1 .Data.Pages}}
+    <div class="author--{{.Params.author}} dn db-ns overflow-hidden w-100 h5 pb5 nb4">
+      <div class="cover h-100" style="background: url('{{.Params.feature_image}}blur=200&fit=crop&crop=edges&h=200&w=2000')"></div>
+    </div>
+  {{end}}
+
   {{ range .Data.Pages }}
-  <div class="mw9 center cf mb4">
-    <div class="fl w-third-ns pa2">
+  <div class="mw9 mt4 center cf mb4 flex flex-wrap flex-nowrap-ns justify-around">
+    <div class="pa2 mw6-ns">
       <img src="{{.Params.feature_image}}" alt="{{.Title}}">
     </div>
-    <div class="fl w-two-thirds-ns pa2">
+    <div class="pa2">
       {{ .Render "summary" }}
     </div>
   </div>
