@@ -3,7 +3,4 @@
 <span class="fw1">on</span>
 <span class="b">{{ dateFormat "Jan 2 2006" .Date}}</span>
 <span class="fw1">in</span>
-<!-- Loop through categories with comma delimiter -->
-{{ range $i, $e := .Params.categories }}
-  {{- if $i -}},{{ end }}<span class="b">{{ $e }}</span>
-{{- end -}}
+<span class="b">{{ .Params.category }}</span>

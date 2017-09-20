@@ -1,1 +1,1 @@
-<img class="{{ if .size }}h{{ .size }}{{ else }}h1{{ end }} 1br1 v-btm o-80 db center mt2 code" src="https://restcountries.eu/data/{{ lower .context.Params.short }}.svg" {{ with .context.Params.name }}alt="{{.}}"{{ end }}>
+<img class="{{ if .size }}h{{ .size }}{{ else }}h1{{ end }} 1br1 v-btm o-80 db center mt2 code" src="https://restcountries.eu/data/{{ lower .country.code }}.svg" {{ with .country.name }}alt="{{.}}"{{ end }}>

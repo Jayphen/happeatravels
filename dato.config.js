@@ -17,7 +17,11 @@ module.exports = (dato, root, i18n) => {
           tags: post.tag.map(tag => tag.slug),
           category: post.category.name,
           date: post.date,
-          country: post.country.name,
+          country: {
+              name: post.country.name,
+              code: post.country.countryCode,
+              continent: post.country.continent.name
+          },
           feature_image: post.featureImage.url()
         },
         content: post.content
