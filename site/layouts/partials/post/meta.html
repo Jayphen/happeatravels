@@ -14,13 +14,15 @@
     <img src="https://www.datocms-assets.com/3352/1505935708-11040848_10152678346132477_6713160288849467284_n.jpg?auto=compress&h=100" class="h3 br-100" alt="{{.Params.author}}">
   </a>
 </div>
-<div class="flex mt2 justify-between relative">
+<div class="flex justify-between mt2 relative">
   <span class="bg-light-gray w-100 absolute z-0" style="height: 1px; top: 50%;"></span>
   <span class="z-1 i silver f7 dib bg-white pr3 pv2">
-    Estimated reading time {{ .ReadingTime }} minutes
+    Estimated reading time {{ .ReadingTime }} min
   </span>
-  <span class="no-underline z-1 bg-light-gray pa2 br2 f7 lh-title ttu dib fw5">
+  <span class="no-underline self-end z-1 nowrap ml-auto mr3 bg-light-gray pa2 br2 f7 lh-title ttu dib fw5">
+    {{ dateFormat "Jan 2, 2006" .Date}}
+  </span>
+  <span class="no-underline z-1 self-end nowrap bg-light-gray pa2 br2 f7 lh-title ttu dib fw5">
     {{ .Params.category }}
-    <!-- Published on {{ dateFormat "Jan 2, 2006" .Date}} -->
   </span>
 </div>
