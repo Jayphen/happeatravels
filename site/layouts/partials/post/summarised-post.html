@@ -1,4 +1,6 @@
-<div class="nested-links lh-copy georgia">{{.Summary}}</div>
+{{ with .Params.intro}}
+  <div class="nested-links lh-copy georgia">{{. | markdownify}}</div>
+{{ end }}
 <div class="flex-ns justify-between flex-wrap">
   <a class="no-underline dib pa2 grow f7 bg-pink b white br2 ba" href="{{.RelPermalink}}">Read more</a>
   {{ with .Params.tags }}

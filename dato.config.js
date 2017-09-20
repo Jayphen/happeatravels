@@ -22,7 +22,9 @@ module.exports = (dato, root, i18n) => {
               code: post.country.countryCode,
               continent: post.country.continent.name
           },
-          feature_image: post.featureImage.url()
+          feature_image: post.featureImage.url(),
+          intro: post.introBlock,
+          content: post.contentContainer.toMap()
         },
         content: post.content
       });

@@ -1,15 +1,59 @@
 {{ define "main" }}
 
-  <div class="author--{{.Params.author}} overflow-hidden aspect-ratio aspect-ratio--16x9">
-    <div class="cover aspect-ratio--object" style="background: url('{{.Params.feature_image}}')"></div>
+  <div class="author--{{.Params.author}} overflow-hidden w-100 h5 pb5 nb4">
+    <div class="cover h-100" style="background: url('{{.Params.feature_image}}blur=200&fit=crop&crop=edges&h=200&w=2000')"></div>
   </div>
   <div class="f5 f4-ns">
-    <div class="center ph3 mt4 measure-wide">
-      {{ partial "post/meta" . }}
+    <div class="mw8 mt4 ph3 center">
+      <div class="measure-wide">
+        {{ partial "post/meta" . }}
+      </div>
     </div>
-    <article class="lh-copy pa3 measure-wide center nested-links">
-<div class="georgia">{{ .Content }}</div>
-      <div class="mt4">
+    <article class="blog-post lh-copy">
+
+      {{ with .Params.intro }}
+        <div class="mw8 center ph3">
+          <div class="blog-post--intro georgia nested-links measure-wide">{{. | markdownify}}</div>
+        </div>
+      {{ end }}
+
+      {{ with .Params.feature_image}}
+        <div class="mw8 center blog-post--feature-image mt4">
+          <img style="pointer-events: none" src="{{.}}mw=1200">
+        </div>
+      {{ end }}
+
+
+      <!-- Loop through blocks and display them -->
+
+      <!-- Text block -->
+      <!-- Image block -->
+      <!-- Intro block -->
+
+        {{ range .Params.content }}
+        {{ if eq .itemType "text_block" }}
+          <div class="mw8 center ph3">
+            <div class="georgia nested-links measure-wide blog-post--text-block">{{ .content | markdownify }}</div>
+          </div>
+        {{ else if eq .itemType "quote_block" }}
+          <blockquote>
+            {{ .quote }}
+            <footer>
+              <cite>{{ .author }}</cite>
+            </footer>
+          </blockquote>
+        {{ else if eq .itemType "gallery_block" }}
+          <div class="gallery mw8 center blog-post--gallery">
+            {{ range .gallery }}
+              <img src="{{ .url }}" alt="{{ .alt }}" title="{{ .title }}" class="blog-post--gallery-item" />
+            {{ end }}
+          </div>
+        {{ end }}
+      {{ end }}
+
+      <!-- End loop -->
+
+      <div class="mt4 mw8 center ph3">
         {{ template "_internal/disqus.html" . }}
       </div>
     </article>
