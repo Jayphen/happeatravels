@@ -26,11 +26,11 @@
     </div>
   {{ end }}
 
-    {{ if false }}
       <div class="lh-copy mb6 f4">
         {{ range after 1 (first 10 (where .Data.Pages "Section" "post") ) }}
-          {{ .Render "summary" }}
+          <div class="mb5">
+            {{ .Render "summary" }}
+          </div>
         {{ end }}
       </div>
-    {{ end }}
 {{ end }}

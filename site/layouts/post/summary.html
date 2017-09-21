@@ -1,10 +1,12 @@
 <article class="author--{{.Params.author}} ph3 center mw6">
-  <header class="center item-center">
-    <h2 class="link">
-      {{ .Title }}
-    </h2>
-    {{ partial "post/meta" . }}
-  </header>
+  <a href="{{.Permalink}}" class="db no-underline">
+    <header class="center item-center">
+      <h2 class="link lh-title">
+        {{ .Title }}
+      </h2>
+      {{ partial "post/meta" . }}
+    </header>
+  </a>
   <main class="center dn">
     {{ partial "post/summarised-post" . }}
   </main>
