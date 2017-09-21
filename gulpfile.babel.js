@@ -67,8 +67,10 @@ gulp.task("js", (cb) => {
 gulp.task("server", ["hugo-preview", "css", "js"], () => {
   browserSync.init({
     server: {
-      baseDir: "./dist"
-    }
+      baseDir: "./dist",
+    },
+    host: 'happeatravels.test',
+    open: 'external'
   });
   gulp.watch("src/js/**/*.js", ["js"]);
   gulp.watch("src/css/**/*.css", ["css"]);
