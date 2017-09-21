@@ -1,5 +1,8 @@
-<article class="author--{{.Params.author}} ph3 flex-l center measure-wide mw8-l mb5 mb6-l">
-  <header class="center mb3">
+<article class="author--{{.Params.author}} ph3 center mw6">
+  <header class="center item-center">
+    <h2 class="link">
+      {{ .Title }}
+    </h2>
     {{ partial "post/meta" . }}
   </header>
   <main class="center dn">

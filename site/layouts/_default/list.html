@@ -1,17 +1,11 @@
 {{ define "main" }}
-  {{ range first 1 .Data.Pages}}
-    <div class="author--{{.Params.author}} dn db-ns overflow-hidden w-100 h5 pb5 nb4">
-      <div class="cover h-100" style="background: url('{{.Params.feature_image}}blur=200&fit=crop&crop=edges&h=200&w=2000')"></div>
-    </div>
-  {{end}}
-
   {{ range .Data.Pages }}
-  <div class="mw9 mt4 center mb4 flex flex-wrap flex-nowrap-ns justify-center">
-    <a href="{{.Permalink}}" class="no-underline">
+  <div class="mw9 mt4 center mb5 flex flex-wrap flex-nowrap-ns justify-center">
+    <a href="{{.Permalink}}" class="db no-underline">
       <div class="pa2 mw6-ns">
-        <img src="{{.Params.feature_image}}" alt="{{.Title}}">
+        <img src="{{.Params.feature_image}}w=500&h=330&fit=crop" alt="{{.Title}}">
       </div>
-      <div class="pa2">
+      <div class="pa2 flex items-center">
         {{ .Render "summary" }}
       </div>
     </a>

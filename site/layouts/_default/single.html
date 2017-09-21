@@ -17,14 +17,16 @@
         <div class="mw8 ph3">
           <div class="blog-post--intro georgia nested-links measure-wide">{{.Params.intro | markdownify}}</div>
         </div>
-        <a class="flex flex-wrap-reverse items-center meta-block mr-auto mr0-ns ml-auto tr-ns mt3 mt0-ns lh-copy link color-inherit hover-gray" href="/author/{{lower .Params.author}}">
-          <div class="dib order-1 mh2 order-0-ns ml-auto-ns">
+        <a class="flex flex-column flex-wrap-reverse items-center meta-block mr-auto mr0-ns ml-auto tr-ns mt3 mt0-ns lh-copy link color-inherit hover-gray" href="/author/{{lower .Params.author}}">
+          <div class="mr2-ns ml-auto-ns">
+            {{ with .Params.country }}
+              {{ partial "helpers/country_flag" (dict "context" $ "country" .) }}
+            {{ end }}
+          </div>
+          <div class="dib order-1 mh2 tc tr-ns mt1 mb2 order-0-ns ml-auto-ns">
             <span class="f6 nowrap fw5 db">Posted about {{.Params.country.name}}</span>
             <span class="f7 fw5 db silver">Read all {{.Params.country.continent}} articles</span>
           </div>
-          {{ with .Params.country }}
-            {{ partial "helpers/country_flag" (dict "context" $ "country" .) }}
-          {{ end }}
         </a>
       </div>
       {{ end }}

@@ -12,6 +12,7 @@
             </h2>
             <span class="f7 f6-l db center tc near-white ttu">
               {{ partial "post/posted_by" . }}
+              <br>
               {{ with .Params.country }}
                 {{ partial "helpers/country_flag" (dict "context" $ "country" .) }}
               {{ end }}

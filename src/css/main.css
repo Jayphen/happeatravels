@@ -68,8 +68,22 @@ body {
   & .bg-pink {
     background: var(--green);
   }
+  & .link {
+    color: var(--green);
+  }
+  & .link:hover {
+    color: var(--dark-gray);
+  }
   & .hover-pink:hover {
     color: var(--green);
+  }
+}
+.author--Ina {
+  & .link {
+    color: var(--pink);
+  }
+  &:hover .link:hover {
+    color: var(--dark-gray);
   }
 }
 
