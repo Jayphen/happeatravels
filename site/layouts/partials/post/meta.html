@@ -3,7 +3,6 @@
 
 <div class="flex justify-between flex-wrap flex-nowrap-ns">
   <header class="measure-narrow">
-    <h1 class="f3 f2-l lh-title mv0">{{.Title}}</h1>
     <h2 class="f5 f4-ns fw5 lh-title mb1 mt2 black-50">{{.Params.subtitle}}</h2>
   </header>
   <a class="flex flex-wrap-reverse items-center meta-block mr-auto mr0-ns tr-ns mt3 mt0-ns lh-copy link color-inherit hover-gray" href="/author/{{lower .Params.author}}">
@@ -14,7 +13,7 @@
     <img src="{{.Params.author_image}}auto=compress&h=100" class="h3 ml-auto br-100" alt="{{.Params.author}}">
   </a>
 </div>
-<div class="flex justify-between mt2 relative">
+<div class="flex justify-between mt3 relative">
   <span class="bg-light-gray w-100 absolute z-0" style="height: 1px; bottom: 0.95rem;"></span>
   <span class="z-1 i silver f7 dib bg-white pr3 pv2 v-btm nowrap">
     Estimated reading time {{ .ReadingTime }} min

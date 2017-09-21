@@ -1,8 +1,5 @@
 {{ define "main" }}
-
-  <div class="author--{{.Params.author}} dn db-ns overflow-hidden w-100 h5 pb5 nb4">
-    <div class="cover h-100" style="background: url('{{.Params.feature_image}}blur=200&fit=crop&crop=edges&h=200&w=2000')"></div>
-  </div>
+  <h1 class="f3 f2-l lh-title mt4 mt7-ns tc">{{.Title}}</h1>
   <div class="f5 f4-ns">
     <div class="mw8 mt4 ph3 center">
       {{ partial "post/meta" . }}
@@ -15,10 +12,21 @@
         </div>
       {{ end }}
 
-      {{ with .Params.intro }}
-        <div class="mw8 center ph3">
-          <div class="blog-post--intro georgia nested-links measure-wide">{{. | markdownify}}</div>
+      {{ if isset .Params "intro" }}
+      <div class="flex center mw8 flex-wrap-reverse">
+        <div class="mw8 ph3">
+          <div class="blog-post--intro georgia nested-links measure-wide">{{.Params.intro | markdownify}}</div>
         </div>
+        <a class="flex flex-wrap-reverse items-center meta-block mr-auto mr0-ns ml-auto tr-ns mt3 mt0-ns lh-copy link color-inherit hover-gray" href="/author/{{lower .Params.author}}">
+          <div class="dib order-1 mh2 order-0-ns ml-auto-ns">
+            <span class="f6 nowrap fw5 db">Posted about {{.Params.country.name}}</span>
+            <span class="f7 fw5 db silver">Read all {{.Params.country.continent}} articles</span>
+          </div>
+          {{ with .Params.country }}
+            {{ partial "helpers/country_flag" (dict "context" $ "country" .) }}
+          {{ end }}
+        </a>
+      </div>
       {{ end }}
 
 

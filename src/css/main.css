@@ -83,7 +83,7 @@ body {
 
 @media (--breakpoint-not-small) {
   .logo--overlay img {
-    height: 5rem;
+    height: 6rem;
   }
   .logo--overlay {
     height: 0;
@@ -93,11 +93,11 @@ body {
     }
   }
   .logo--moon {
-    background: color(white alpha(-10%));
+    background: white;
     top: 0;
   }
   .logo--title {
-    color: white;
+    margin-left: -0.8em;
     &:after {
       content: "";
       border-top: 3px solid color(white alpha(-90%));
@@ -110,13 +110,13 @@ body {
 
 }
 .logo--moon {
-  height: 5.6rem;
-  width: 5.6rem;
+  height: 6.6rem;
+  width: 6.6rem;
   background: white;
-  border-radius: 3rem;
+  border-radius: 6rem;
   position: absolute;
   top: -0.8rem;
 }
-.logo--title, .logo--moon {
+.logo--moon {
   margin-left: 0.6rem;
 }
