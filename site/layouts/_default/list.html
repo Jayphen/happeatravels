@@ -7,12 +7,14 @@
 
   {{ range .Data.Pages }}
   <div class="mw9 mt4 center mb4 flex flex-wrap flex-nowrap-ns justify-center">
-    <div class="pa2 mw6-ns">
-      <img src="{{.Params.feature_image}}" alt="{{.Title}}">
-    </div>
-    <div class="pa2">
-      {{ .Render "summary" }}
-    </div>
+    <a href="{{.Permalink}}" class="no-underline">
+      <div class="pa2 mw6-ns">
+        <img src="{{.Params.feature_image}}" alt="{{.Title}}">
+      </div>
+      <div class="pa2">
+        {{ .Render "summary" }}
+      </div>
+    </a>
   </div>
   {{ end }}
 {{ end }}
