@@ -169,3 +169,11 @@ body {
 .logo--moon {
   margin-left: 0.6rem;
 }
+
+/*Hide Disqus footer */
+#disqus_thread {
+  overflow: hidden;
+  & iframe {
+    margin-bottom: -54px;
+  }
+}
