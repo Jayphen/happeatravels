@@ -10,7 +10,7 @@
             <h2 class="lh-title f3 f2-l ma2 fw6">
               <span>{{.Title}}</span>
             </h2>
-            <span class="f7 f6-l db near-white ttu">
+            <span class="f7 f6-l db center tc near-white ttu">
               {{ partial "post/posted_by" . }}
               {{ with .Params.country }}
                 {{ partial "helpers/country_flag" (dict "context" $ "country" .) }}

@@ -8,14 +8,21 @@
   </head>
   <body class="sans-serif bg-white-10 {{.Page.Kind}}">
     {{ block "header" . }}
-      <div class="logo--overlay flex justify-center w-100">
-        <div class="z-999 tc">
-          <a href="/" class="grow no-underline db">
-            <span class="logo--moon mt1 mt4-ns"></span>
-            <img class="h4 mt3 mt4-ns dib v-mid relative" src="/images/happea-travels-flat.png" alt="Happea Travels; a travel blog" srcset="/images/happea-travels-flat.png 1x, /images/happea-travels-flat@2x.png 2x">
-            <span class="logo--title f5 green db mt3 mb3 fw5">Happea Travels</span>
-          </a>
-        </div>
+    <div class="main-nav center logo--overlay flex justify-between mw8 h4">
+      <nav class="h-100">
+        <a class="link pa3 f7 f6-ns fw5" href="/">Home</a>
+      </nav>
+      <div class="z-999 tc self-end main-nav--logo">
+        <a href="/" class="grow no-underline db">
+          <span class="logo--moon mt1 mt2-ns"></span>
+          <img class="h3 mt3 mt2-ns dib v-mid relative" src="/images/happea-travels-flat.png" alt="Happea Travels; a travel blog" srcset="/images/happea-travels-flat.png 1x, /images/happea-travels-flat@2x.png 2x">
+          <span class="logo--title f5 green db mt3 mb3 fw5">Happea Travels</span>
+        </a>
+      </div>
+
+      <nav class="h-100">
+        <a class="link pa3 f7 f6-ns fw5" href="/post">Blog</a>
+      </nav>
       </div>
     {{ end }}
 

@@ -6,11 +6,42 @@
 
 :root {
   --green: #89B6A5;
-  --pink: #DD9CDC;
+  --pink: #DB6E6E;
 }
 
 body {
   overflow-x: hidden;
+}
+
+.home .main-nav {
+  margin-bottom: 0;
+}
+.main-nav {
+  margin-bottom: 4rem;
+  & nav a {
+    color: color(var(--pink) alpha(-40%));
+    text-decoration: underline;
+    height: 100%;
+    display: flex;
+    align-items: center;
+  }
+  & a:hover,
+  & a:active {
+    color: var(--pink);
+  }
+}
+.main-nav--logo {
+  /* Force the logo to centre */
+  position: absolute;
+  left: 50%;
+  transform: translateX(-50%);
+  @media (--breakpoint-not-small) {
+    & a {
+      top: 3.5rem;
+      position: relative;
+      margin-top: -3.5rem;
+    }
+  }
 }
 
 @media (--breakpoint-not-small) {
@@ -86,8 +117,6 @@ body {
     height: 6rem;
   }
   .logo--overlay {
-    height: 0;
-    margin: 0 auto;
     body.home & {
       pointer-events: none!important;
     }
@@ -99,15 +128,21 @@ body {
   .logo--title {
     margin-left: -0.8em;
     &:after {
+      /*
       content: "";
       border-top: 3px solid color(white alpha(-90%));
       display: block;
       width: 2.5rem;
       height: 0;
       margin: 0.5rem auto;
+      */
     }
   }
-
+}
+@media (--breakpoint-not-small) {
+  .home .logo--title {
+    color: white;
+  }
 }
 .logo--moon {
   height: 6.6rem;
