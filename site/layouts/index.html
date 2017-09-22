@@ -30,7 +30,7 @@
         {{ range after 1 (first 10 (where .Data.Pages "Section" "post") ) }}
           <div class="mb5 ph4">
             <div class="center nb3 mw6">
-              <img src="{{ .Params.feature_image }}h=90&w=550&fit=crop&crop=edges">
+              <a href="{{.Permalink}}"><img src="{{ .Params.feature_image }}h=90&w=550&fit=crop&crop=edges"></a>
             </div>
             <div class="mw6">
               {{ .Render "summary" }}
