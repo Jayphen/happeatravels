@@ -32,7 +32,9 @@
             <div class="center nb3 w6">
               <img src="{{ .Params.feature_image }}h=80&w=500&fit=crop&crop=edges">
             </div>
-            {{ .Render "summary" }}
+            <div class="mw6">
+              {{ .Render "summary" }}
+            </div>
           </div>
         {{ end }}
       </div>
