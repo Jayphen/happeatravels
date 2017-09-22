@@ -198,3 +198,6 @@ code {
 .footnote-ref a:after {
   content: "]";
 }
+.footnotes {
+  font-size: 80%;
+}
