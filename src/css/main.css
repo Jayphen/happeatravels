@@ -180,10 +180,21 @@ body {
   }
 }
 
+/*
+Style for posts generated with Markdown
+*/
 code {
   font-size: 80%;
   background: color(antiquewhite alpha(-40%));
   color: color(antiquewhite shade(30%));
   padding: 0.3em 0.5em;
   border-radius: 3px;
+}
+
+/* Make footnotes more visible */
+.footnote-ref a:before {
+  content: "[";
+}
+.footnote-ref a:after {
+  content: "]";
 }
