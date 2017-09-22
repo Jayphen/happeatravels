@@ -12,6 +12,13 @@
 body {
   overflow-x: hidden;
 }
+/* Karla body, Lora headings */
+.sans-serif {
+  font-family: karla;
+}
+.georgia {
+  font-family: Lora;
+}
 
 .home .main-nav {
   margin-bottom: 0;
