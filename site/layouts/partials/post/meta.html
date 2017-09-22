@@ -14,14 +14,14 @@
   </a>
 </div>
 <div class="flex justify-between mt3 relative">
-  <span class="bg-light-gray w-100 absolute z-0" style="height: 1px; bottom: 0.95rem;"></span>
-  <span class="z-1 i silver f7 dib bg-white pr3 pv2 v-btm nowrap">
+  <span class="tag--line w-100 absolute z-0" style="bottom: 0.95rem;" ></span>
+  <span class="z-1 i silver f7 dib bg-white pr3 pv2 v-btm nowrap reading-time">
     Estimated reading time {{ .ReadingTime }} min
   </span>
-  <span class="no-underline self-end z-1 nowrap ml-auto mr2 bg-light-gray pa2 br2 f7 lh-title ttu dib fw5">
+  <span class="no-underline self-end z-1 nowrap ml-auto mr2 pa2 br2 f7 lh-title ttu dib fw5 tag">
     {{ dateFormat "Jan 2, 2006" .Date}}
   </span>
-  <span class="no-underline z-1 self-end nowrap bg-light-gray pa2 br2 f7 lh-title ttu dib fw5">
+  <span class="no-underline z-1 self-end nowrap pa2 br2 f7 lh-title ttu dib fw5 tag">
     {{ .Params.category }}
   </span>
 </div>

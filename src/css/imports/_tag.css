@@ -1,0 +1,8 @@
+.tag {
+  background-color: color(var(--light-gray) tint(30%));
+  color: var(--gray);
+}
+.tag--line {
+  height: 1px;
+  background-color: color(var(--light-gray) tint(30%));
+}

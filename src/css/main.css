@@ -3,6 +3,7 @@
  */
 @import "imports/reset.css";
 @import "imports/tachyons.css";
+@import "imports/_tag.css";
 
 :root {
   --green: #89B6A5;
@@ -200,4 +201,9 @@ code {
 }
 .footnotes {
   font-size: 80%;
+}
+hr {
+  border: 0;
+  height: 1px;
+  background-color: color(var(--light-gray) tint(30%));
 }
