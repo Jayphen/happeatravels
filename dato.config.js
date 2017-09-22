@@ -6,6 +6,8 @@ module.exports = (dato, root, i18n) => {
     // ...iterate over the "post" records...
     dato.posts.forEach(post => {
 
+      const onlyContent = post.contentContainer.toMap().filter((container) => container.content).map(container => container.content);
+
       // ...and create a markdown file for each article!
       dir.createPost(`${post.slug}.md`, "yaml", {
         frontmatter: {
@@ -28,7 +30,7 @@ module.exports = (dato, root, i18n) => {
           intro: post.introBlock,
           content: post.contentContainer.toMap()
         },
-        content: post.content
+        content: onlyContent
       });
     });
   });
