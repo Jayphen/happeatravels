@@ -26,9 +26,12 @@
     </div>
   {{ end }}
 
-      <div class="lh-copy mb6 f4">
+      <div class="lh-copy mb5 f4 flex flex-wrap items-top justify-center">
         {{ range after 1 (first 10 (where .Data.Pages "Section" "post") ) }}
-          <div class="mb5">
+          <div class="mb5 ph4">
+            <div class="center nb3 w6">
+              <img src="{{ .Params.feature_image }}h=80&w=500&fit=crop&crop=edges">
+            </div>
             {{ .Render "summary" }}
           </div>
         {{ end }}
