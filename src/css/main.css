@@ -178,3 +178,11 @@ body {
     margin-bottom: -54px;
   }
 }
+
+code {
+  font-size: 80%;
+  background: color(antiquewhite alpha(-40%));
+  color: color(antiquewhite shade(30%));
+  padding: 0.3em 0.5em;
+  border-radius: 3px;
+}
