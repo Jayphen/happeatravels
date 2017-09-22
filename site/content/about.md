@@ -4,7 +4,7 @@ layout: about
 
 Hello, Hola, Guten Tag, Ciao, Bonjour, Szia and Xin Cháo, fellow citizens of the world, travel enthusiasts and travellers to be.
 
-We are very happea (;)) to welcome you on our blog, which we created to share our experiences, adventures and a bunch of travel tips with all of you, who happen to visit places, that we have visited in the past year already, or to take you live on one of our current adventures with us.
+We are very happea (:wink:) to welcome you on our blog, which we created to share our experiences, adventures and a bunch of travel tips with all of you, who happen to visit places, that we have visited in the past year already, or to take you live on one of our current adventures with us.
 
 Humbly, I assume you might want to know how we are able to do what we are doing and how we got here in the first place. 
 
@@ -19,4 +19,4 @@ However, it was not easy at the beginning to stay inseparable, since Jayphen was
 
 After about a year, Ina got the chance to work remotely for her London based company and was finally able to join Jayphen on his adventure and here we are now. Travelling the world together and trying to stay for at least a month or two in each country to really suck in all the breath taking impressions, the wide variety of different cultures and more often than not the food that all those beautiful countries have to offer to their citizens of the world.
 
-If you have more questions about us or our life style please feel free to leave us a comment or drop us a private message anytime and until then: HAPPEA TRAVELS 
+If you have more questions about us or our life style please feel free to leave us a comment or drop us a private message anytime and until then: HAPPEA TRAVELS :tada:
