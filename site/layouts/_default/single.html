@@ -46,7 +46,12 @@
           </div>
         {{ else if eq .itemType "single_image"}}
           <div class="mw8 center mt4">
-            <img style="pointer-events: none" src="{{.image.url}}mw=1200">
+            <div class="dib">
+              <img style="pointer-events: none" src="{{.image.url}}mw=1200">
+              <div class="center tc nt1 f6 gray">
+                {{.caption}}
+              </div>
+            </div>
           </div>
         {{ else if eq .itemType "quote_block" }}
           <blockquote>
