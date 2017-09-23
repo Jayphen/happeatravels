@@ -17,7 +17,7 @@
         <div class="mw8 ph3">
           <div class="blog-post--intro georgia nested-links measure-wide">{{.Params.intro | markdownify}}</div>
         </div>
-        <a class="flex flex-column flex-wrap-reverse items-center meta-block mr-auto mr0-ns ml-auto tr-ns mt3 mt0-ns lh-copy link hover-pink silver" href="/author/{{lower .Params.author}}">
+        <a class="flex flex-column flex-wrap-reverse items-center meta-block mr-auto mr0-ns ml-auto tr-ns mt3 mt0-ns lh-copy link hover-pink silver" href="/destination/{{lower .Params.destination}}">
           <div class="mr2-ns ml-auto-ns">
             {{ with .Params.country }}
               {{ partial "helpers/country_flag" (dict "context" $ "country" .) }}
@@ -25,7 +25,7 @@
           </div>
           <div class="dib order-1 mh2 tc tr-ns mt1 mb2 order-0-ns ml-auto-ns">
             <span class="f6 nowrap fw5 db dark-gray">Posted about {{.Params.country.name}}</span>
-            <span class="f7 fw5 db">Read all {{.Params.country.continent}} articles</span>
+            <span class="f7 fw5 db">Read all {{.Params.destination}} articles</span>
           </div>
         </a>
       </div>

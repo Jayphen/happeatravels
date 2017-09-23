@@ -4,10 +4,12 @@ languageCode = "en-us"
 languageLang = "en"
 title = "Happea Travels - a travel blog by Ina and Jayphen"
 enableEmoji = true
+preserveTaxonomyNames = true
 [taxonomies]
   tag = "tags"
   category = "category"
   author = "author"
+  destination = "destination"
 [[menu.main]]
 identifier = "post"
 name = "All posts"
