@@ -43,7 +43,7 @@ body {
   /* Force the logo to centre */
   position: absolute;
   left: 50%;
-  transform: translateX(-32%);
+  transform: translateX(-50%);
   @media (--breakpoint-not-small) {
     & a {
       top: 3.5rem;
