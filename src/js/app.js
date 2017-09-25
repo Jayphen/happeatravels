@@ -1,4 +1,10 @@
 // JS Goes here - ES6 supported
+// main.js
+(function() {
+  const imagesLoaded = require('imagesloaded');
+  const finalImage = document.querySelector('.full-image');
 
-// Say hello
-console.log("🦊 Hello! Edit me in src/js/app.js");
+  imagesLoaded( '.blog-post', function() {
+    finalImage.classList.toggle('o-0');
+  })
+})(window);
