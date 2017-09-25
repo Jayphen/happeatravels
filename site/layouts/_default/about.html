@@ -1,5 +1,5 @@
 {{ define "main" }}
-  <div class="mw7 center ph3 mt4">
+  <div class="mw7 center pa3 mt4">
     <h1 class="tc f3 f2-ns">About Us {{ ":wave:" | emojify }}</h1>
       {{ range .Params.content }}
       {{ if eq .itemType "text_block" }}
@@ -7,8 +7,8 @@
           <div class="georgia nested-links measure-wide blog-post--text-block">{{ .content | markdownify | emojify }}</div>
         </div>
       {{ else if eq .itemType "single_image"}}
-        <div class="center">
-          <div class="db mt4 fr-ns pa4-ns tc center w-80 w-50-ns w-60-l nr4-m nr7-l">
+        <div class="nr5-l">
+          <div class="db mt4 fr-ns pa4-ns tc center w-80 w-50-ns w-60-l nr4-m nr6-l">
             <img style="pointer-events: none" src="{{.image.url}}">
             <div class="center tc f6 gray">
               {{.caption}}
