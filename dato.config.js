@@ -39,9 +39,9 @@ module.exports = (dato, root, i18n) => {
   root.directory("site/content", (dir) => {
     dir.createPost('about.md', "yaml", {
       frontmatter: {
-        layout: "about"
+        layout: "about",
+        content: dato.about.content.toMap()
       },
-      content: dato.about.content[0].content
     })
   })
 }

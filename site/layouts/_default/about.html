@@ -1,8 +1,33 @@
 {{ define "main" }}
   <div class="mw7 center ph3 mt4">
     <h1 class="tc f3 f2-ns">About Us {{ ":wave:" | emojify }}</h1>
-    <div class="f5 f4-ns center relative lh-copy">
-      <div class="georgia nested-links blog-post--text-block">{{ .Content | markdownify }}</div>
-    </div>
-  </div>
+      {{ range .Params.content }}
+      {{ if eq .itemType "text_block" }}
+        <div class="mw8 center ph3 relative lh-copy f5 f4-ns">
+          <div class="georgia nested-links measure-wide blog-post--text-block">{{ .content | markdownify | emojify }}</div>
+        </div>
+      {{ else if eq .itemType "single_image"}}
+        <div class="mw8 center mt4">
+          <div class="db fr-ns pa4-ns tc center w-80 w-50-ns w-60-l nr4-m nr6-l">
+            <img style="pointer-events: none" src="{{.image.url}}">
+            <div class="center tc f6 gray">
+              {{.caption}}
+            </div>
+          </div>
+        </div>
+      {{ else if eq .itemType "quote_block" }}
+        <blockquote>
+          {{ .quote }}
+          <footer>
+            <cite>{{ .author }}</cite>
+          </footer>
+        </blockquote>
+      {{ else if eq .itemType "gallery_block" }}
+        <div class="gallery mw8 center blog-post--gallery">
+          {{ range .gallery }}
+            <img src="{{ .url }}" alt="{{ .alt }}" title="{{ .title }}" class="blog-post--gallery-item" />
+          {{ end }}
+        </div>
+      {{ end }}
+    {{ end }}
 {{ end }}
