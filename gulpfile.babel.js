@@ -20,7 +20,7 @@ const argv = yargs.argv;
 
 // Hugo arguments
 const hugoArgsDefault = ["-d", "../dist", "-s", "site", "-v"];
-const hugoArgsPreview = ["--baseUrl=/", "--buildDrafts", "--buildFuture"];
+const hugoArgsPreview = ["--baseUrl=/", "--cleanDestinationDir", "--buildDrafts", "--buildFuture"];
 
 // Development tasks
 gulp.task("hugo", (cb) => buildSite(cb));
