@@ -6,6 +6,9 @@
     <title>{{ $.Site.Title }}</title>
     <link href="https://fonts.googleapis.com/css?family=Karla:400,400i,700|Lora:400,400i,700" rel="stylesheet">
     <link rel="stylesheet" href="/css/main.css">
+    {{ if ne (getenv "HUGO_ENV") "development" }}
+      {{ partial "google_analytics" . }}
+    {{ end }}
   </head>
   <body class="sans-serif bg-white-10 {{.Page.Kind}}">
     {{ block "header" . }}

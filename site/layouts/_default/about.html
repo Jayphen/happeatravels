@@ -15,13 +15,6 @@
             </div>
           </div>
         </div>
-      {{ else if eq .itemType "quote_block" }}
-        <blockquote>
-          {{ .quote }}
-          <footer>
-            <cite>{{ .author }}</cite>
-          </footer>
-        </blockquote>
       {{ else if eq .itemType "gallery_block" }}
         <div class="gallery mw8 center blog-post--gallery">
           {{ range .gallery }}

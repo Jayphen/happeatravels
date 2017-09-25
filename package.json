@@ -7,7 +7,7 @@
     "hugo": "gulp hugo",
     "build": "./node_modules/.bin/dato dump && gulp build --production",
     "build-preview": "gulp build-preview",
-    "start": "gulp server",
+    "start": "export HUGO_ENV=development && gulp server",
     "lint": "eslint src"
   },
   "author": "",
