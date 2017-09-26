@@ -1,8 +1,14 @@
 {{ define "main" }}
-  <ul class="list center tc">
+  <ul class="list center tc pa0 mt5 mw6">
     {{ $data := .Data }}
+    <h2>{{ humanize $data.Plural }}</h2>
     {{ range $key, $value := .Data.Terms.Alphabetical }}
-    <li><a class="dib link green" href="{{ $.Site.LanguagePrefix }}/{{ $data.Plural }}/{{ $value.Name | urlize }}"> {{ $value.Name }} </a> {{ $value.Count }} </li>
+    <li>
+      <a class="dib link dark-gray hover-green flex w-100 pa2 justify-between" href="{{ $.Site.LanguagePrefix }}/{{ $data.Plural }}/{{ $value.Name | urlize }}">
+        <span>{{ $value.Name }}</span>
+        <span class="silver">{{ $value.Count }} {{ if eq $value.Count 1 }} post {{ else }} posts {{ end }}</span>
+      </a>
+    </li>
     {{ end }}
   </ul>
 {{ end }}
