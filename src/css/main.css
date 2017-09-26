@@ -11,6 +11,9 @@
   --pink: #DB6E6E;
 }
 
+*, *:before, *:after {
+  box-sizing: inherit;
+}
 body {
   overflow-x: hidden;
   -webkit-font-smoothing: antialiased;
