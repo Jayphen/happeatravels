@@ -26,6 +26,10 @@
     "portrait landscape1";
 }
 
+.gallery-item--portrait {
+  grid-area: portrait;
+}
+
 .gallery--3x3 {
   grid-template-columns: repeat(auto-fill, minmax(32%, 1fr));
   grid-template-rows: repeat(auto-fill, minmax(120px, 1fr));
