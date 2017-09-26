@@ -4,6 +4,7 @@
 @import "imports/reset.css";
 @import "imports/tachyons.css";
 @import "imports/_tag.css";
+@import "imports/_gallery.css";
 
 :root {
   --green: #89B6A5;
@@ -97,39 +98,6 @@ body {
   }
   &:hover .link:hover {
     color: var(--dark-gray);
-  }
-}
-
-.nested-links {
-  & h1,
-  & h2,
-  & h3,
-  & h4,
-  & h5,
-  & h6 {
-    font-family: Karla;
-    margin-bottom: -0.8rem;
-    margin-top: 2em;
-    line-height: 1.25;
-  }
-  & h5, & h6 { 
-    color: var(--silver);
-    text-transform: uppercase;
-    letter-spacing: 0.1em; 
-    font-weight: 600;
-
-  }
-  @media (--breakpoint-large) {
-    & img {
-      margin-left: -10vw;
-      margin-right: -10vw;
-      max-width: calc(100% + 20vw);
-    }
-  }
-  & img {
-    margin-left: -5vw;
-    margin-right: -5vw;
-    max-width: calc(100% + 10vw);
   }
 }
 
