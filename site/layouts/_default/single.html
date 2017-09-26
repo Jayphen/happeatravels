@@ -8,6 +8,7 @@
     <article class="blog-post lh-copy">
 
       {{ with .Params.feature_image}}
+        <!-- Featured Image Block -->
         {{ $height := mul $.Params.feature_image_data.height 1.0 }}
         {{ $width := mul $.Params.feature_image_data.width 1.0 }}
         <div class="mw8 center blog-post--feature-image mt4 relative">
@@ -64,10 +65,18 @@
               <cite>{{ .author }}</cite>
             </footer>
           </blockquote>
-        {{ else if eq .itemType "gallery_block" }}
-          <div class="gallery mw8 center blog-post--gallery">
+        {{ else if eq .itemType "gallery" }}
+          <!-- Gallery block -->
+          <div class="gallery mw8 center blog-post--gallery gallery--{{.galleryType.galleryType}}">
+            {{ $.Scratch.Set "landscape" 0}}
             {{ range .gallery }}
-              <img src="{{ .url }}" alt="{{ .alt }}" title="{{ .title }}" class="blog-post--gallery-item" />
+              {{ $height := mul .height 1.0 }}
+              {{ $width := mul .width 1.0 }}
+              {{ $counter := $.Scratch.Get "landscape"}}
+              <div class="grid-item" style="grid-area: {{ if gt $height $width }} portrait {{ else }} landscape{{ $counter }} {{ end }}">
+                <img src="{{.url}}w=1200&fit=crop" alt="">
+              </div>
+              {{ if gt $width $height }}{{ $.Scratch.Add "landscape" 1 }}{{ end }}
             {{ end }}
           </div>
         {{ end }}
