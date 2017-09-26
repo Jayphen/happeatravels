@@ -7,6 +7,6 @@
     "**/.DS_Store": true,
     "dist": true,
     "node_modules": true,
-    "site/static": true
+    "site/static/*": true
   }
 }

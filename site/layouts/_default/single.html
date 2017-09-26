@@ -13,7 +13,7 @@
         {{ $width := mul $.Params.feature_image_data.width 1.0 }}
         <div class="mw8 center blog-post--feature-image mt4 relative">
           <img style="pointer-events: none" src="{{.}}w=1200&blur=900" class="blurred-image">
-          <img style="pointer-events: none; top: 0; transition: all 2s" src="{{.}}w=1800&fit=clip" class="absolute o-0 full-image z-5" data-ratio="{{ div $width $height }}" data-ratio-percent="{{ mul 100 (div $height $width) }}">
+          <img style="pointer-events: none; top: 0; left:0; transition: all 2s" src="{{.}}w=1800&fit=clip" class="absolute o-0 full-image z-5" data-ratio="{{ div $width $height }}" data-ratio-percent="{{ mul 100 (div $height $width) }}">
         </div>
       {{ end }}
 
@@ -73,8 +73,8 @@
               {{ $height := mul .height 1.0 }}
               {{ $width := mul .width 1.0 }}
               {{ $counter := $.Scratch.Get "landscape"}}
-              <div class="gallery-item" data-lightbox style="grid-area: {{ if gt $height $width }} portrait {{ else }} landscape{{ $counter }} {{ end }}">
-                <img src="{{.url}}w=1200&fit=crop" alt="">
+              <div class="gallery-item" style="grid-area: {{ if gt $height $width }} portrait {{ else }} landscape{{ $counter }} {{ end }}">
+                <img src="{{.url}}w=1200&fit=crop" data-lightbox alt="{{.alt}}">
               </div>
               {{ if gt $width $height }}{{ $.Scratch.Add "landscape" 1 }}{{ end }}
             {{ end }}
