@@ -1,9 +1,6 @@
 <!doctype html>
 <html lang="{{ $.Site.Language.Lang }}">
   <head>
-    {{ if ne (getenv "HUGO_ENV") "development" }}
-      {{ partial "google_analytics" . }}
-    {{ end }}
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>{{ $.Site.Title }}</title>
