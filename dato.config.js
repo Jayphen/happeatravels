@@ -28,6 +28,7 @@ module.exports = (dato, root, i18n) => {
           },
           destination: post.country.continent.name,
           feature_image: post.featureImage.url(),
+          feature_image_data: post.featureImage.toMap(),
           intro: post.introBlock,
           content: post.contentContainer.toMap()
         },
