@@ -67,7 +67,7 @@
           </blockquote>
         {{ else if eq .itemType "gallery" }}
           <!-- Gallery block -->
-          <div class="gallery mw8 center blog-post--gallery gallery--{{.galleryType.galleryType}}">
+          <div class="gallery mw8 center blog-post--gallery">
             {{ $.Scratch.Set "landscape" 0}}
             {{ range .gallery }}
               {{ $height := mul .height 1.0 }}
