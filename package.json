@@ -6,7 +6,7 @@
   "scripts": {
     "hugo": "gulp hugo",
     "build": "./node_modules/.bin/dato dump && gulp build --production",
-    "build-preview": "gulp build-preview",
+    "build-preview": "./node_modules/.bin/dato dump && gulp build-preview",
     "start": "export HUGO_ENV=development && gulp server",
     "lint": "eslint src"
   },
