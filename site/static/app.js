@@ -77,9 +77,12 @@ module.exports = __webpack_require__(1);
 "use strict";
 
 
-// JS Goes here - ES6 supported
-// main.js
+// Basic function to fade in feature image
 __webpack_require__(2);
+// Pass it a classname and it will turn the image in to a lightbox
+var lightbox = __webpack_require__(5);
+
+lightbox('[data-lightbox]');
 
 /***/ }),
 /* 2 */
@@ -92,7 +95,7 @@ var imagesLoaded = __webpack_require__(3);
 
 var finalImage = document.querySelector('.full-image');
 
-imagesLoaded('.blog-post', function () {
+if (finalImage) imagesLoaded('.blog-post', function () {
   // Remove 0 opacity on the full image to reveal it
   finalImage.classList.toggle('o-0');
 });
@@ -595,6 +598,31 @@ return EvEmitter;
 
 }));
 
+
+/***/ }),
+/* 5 */
+/***/ (function(module, exports, __webpack_require__) {
+
+"use strict";
+
+
+var toggleLightbox = function toggler(item) {
+  item.target.classList.toggle('lightbox--opened');
+};
+
+var initLightbox = function init(className) {
+  var lightboxImage = document.querySelectorAll(className);
+  lightboxImage.forEach(function (item) {
+    if (item.classList) {
+      item.classList.add('lightbox--closed');
+    } else {
+      item.className += ' lightbox--closed';
+    }
+    item.addEventListener('click', toggleLightbox);
+  });
+};
+
+module.exports = initLightbox;
 
 /***/ })
 /******/ ]);

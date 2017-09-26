@@ -10,10 +10,10 @@
   grid-template-areas:
     "landscape0 portrait"
     "landscape1 portrait";
-  & .grid-item {
+  & .gallery-item {
     height: 100%;
   }
-  & .grid-item img {
+  & .gallery-item img {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -58,5 +58,25 @@
   grid-template-areas: unset;
   & .grid-item {
     grid-area: unset !important;
+  }
+}
+
+.lightbox--closed {
+  cursor: zoom-in;
+}
+.lightbox--opened {
+  background-color: #ffffff;
+  z-index: 9999;
+  position: fixed;
+  display: block;
+  width: 100%;
+  height: 100%;
+  left: 0;
+  top: 0;
+  object-fit: scale-down;
+  cursor: zoom-out;
+  padding: 1rem;
+  & img {
+    object-fit: scale-down !important;
   }
 }

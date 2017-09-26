@@ -73,7 +73,7 @@
               {{ $height := mul .height 1.0 }}
               {{ $width := mul .width 1.0 }}
               {{ $counter := $.Scratch.Get "landscape"}}
-              <div class="grid-item" style="grid-area: {{ if gt $height $width }} portrait {{ else }} landscape{{ $counter }} {{ end }}">
+              <div class="gallery-item" data-lightbox style="grid-area: {{ if gt $height $width }} portrait {{ else }} landscape{{ $counter }} {{ end }}">
                 <img src="{{.url}}w=1200&fit=crop" alt="">
               </div>
               {{ if gt $width $height }}{{ $.Scratch.Add "landscape" 1 }}{{ end }}
