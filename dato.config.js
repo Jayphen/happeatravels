@@ -1,3 +1,5 @@
+const omitDeep = require('omit-deep');
+
 module.exports = (dato, root, i18n) => {
 
   // inside the "post" directory...
@@ -6,7 +8,9 @@ module.exports = (dato, root, i18n) => {
     // ...iterate over the "post" records...
     dato.posts.forEach(post => {
 
-      const onlyContent = post.contentContainer.toMap().filter((container) => container.content).map(container => container.content);
+      const onlyContent = [post.introBlock, post.contentContainer.toMap().map(container => container.content)].join('\n\n');
+
+      const contentWithoutSEO = omitDeep(post.contentContainer.toMap(), ['seoMetaTags']);
 
       // ...and create a markdown file for each article!
       dir.createPost(`${post.slug}.md`, "yaml", {
@@ -30,7 +34,7 @@ module.exports = (dato, root, i18n) => {
           feature_image: post.featureImage.url(),
           feature_image_data: post.featureImage.toMap(),
           intro: post.introBlock,
-          content: post.contentContainer.toMap()
+          content: contentWithoutSEO
         },
         content: onlyContent
       });
