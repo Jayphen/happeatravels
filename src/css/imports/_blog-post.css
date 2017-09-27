@@ -1,0 +1,8 @@
+.blog-post--text-block + .blog-post--gallery,
+.blog-post--gallery + .blog-post--text-block {
+  margin-top: var(--spacing-extra-large);
+}
+
+.blog-post--intro-block {
+  margin-top: var(--spacing-large);
+}

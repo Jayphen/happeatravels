@@ -19,7 +19,7 @@
 
       {{ if isset .Params "intro" }}
       <div class="flex center mw8 flex-wrap-reverse">
-        <div class="mw8 ph3">
+        <div class="mw8 ph3 blog-post--intro-block">
           <div class="blog-post--intro georgia nested-links measure-wide">{{.Params.intro | markdownify}}</div>
         </div>
         <a class="flex flex-column flex-wrap-reverse items-center meta-block mr-auto mr0-ns ml-auto tr-ns mt3 mt0-ns lh-copy link hover-pink silver" href="/destination/{{lower .Params.destination}}">
@@ -46,11 +46,11 @@
 
         {{ range .Params.content }}
         {{ if eq .itemType "text_block" }}
-          <div class="mw8 center ph3 relative">
-            <div class="georgia nested-links measure-wide blog-post--text-block">{{ .content | markdownify }}</div>
+          <div class="mw8 center ph3 relative blog-post--text-block">
+            <div class="georgia nested-links measure-wide">{{ .content | markdownify }}</div>
           </div>
         {{ else if eq .itemType "single_image"}}
-          <div class="mw8 center mt4">
+          <div class="mw8 center mt4 blog-post--image-block">
             <div class="dib">
               <img style="pointer-events: none" src="{{.image.url}}mw=1200">
               <div class="center tc nt1 f6 gray">
