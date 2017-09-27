@@ -1,7 +1,7 @@
 {{ define "main" }}
   <ul class="list center tc pa0 mt5 mw6">
     {{ $data := .Data }}
-    <h2>{{ humanize $data.Plural }}</h2>
+    <h1 class="center tc pa0 mt5 mw6">{{ humanize $data.Plural }}</h1>
     {{ range $key, $value := .Data.Terms.Alphabetical }}
     <li>
       <a class="dib link dark-gray hover-green flex w-100 pa2 justify-between" href="{{ $.Site.LanguagePrefix }}/{{ $data.Plural }}/{{ $value.Name | urlize }}">
