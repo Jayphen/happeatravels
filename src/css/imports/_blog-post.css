@@ -1,5 +1,5 @@
-.blog-post--text-block + .blog-post--gallery,
-.blog-post--gallery + .blog-post--text-block {
+p + .blog-post--gallery,
+.blog-post--gallery + p {
   margin-top: var(--spacing-extra-large);
 }
 

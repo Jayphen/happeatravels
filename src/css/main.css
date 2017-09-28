@@ -174,3 +174,23 @@ hr {
   height: 1px;
   background-color: color(var(--light-gray) tint(30%));
 }
+
+.blog-post--body {
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+  max-width: 64rem;
+  @extend .georgia;
+  
+  & > p,
+  & h1,
+  & h2,
+  & h3,
+  & h4,
+  & h5,
+  & h6 {
+    max-width: 34em;
+    padding-left: var(--spacing-medium);
+    padding-right: var(--spacing-medium);
+  }
+}
