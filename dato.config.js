@@ -16,7 +16,7 @@ module.exports = (dato, root, i18n) => {
       post.contentContainer.toMap().forEach((val, index) => {
         switch (val.itemType) {
           case "text_block":
-            content.push(`{{< text_block >}}${val.content}{{< /text_block >}}`);
+            content.push(`${val.content}`);
             break;
           case "single_image":
             content.push(outdent`
@@ -59,7 +59,7 @@ module.exports = (dato, root, i18n) => {
           feature_image_data: post.featureImage.toMap(),
           intro: post.introBlock
         },
-        content: content.join('\n')
+        content: content.join('\n\n')
       });
     });
   });

@@ -58,16 +58,4 @@
     font-weight: 600;
 
   }
-  @media (--breakpoint-large) {
-    & img {
-      margin-left: -10vw;
-      margin-right: -10vw;
-      max-width: calc(100% + 20vw);
-    }
-  }
-  & img {
-    margin-left: -5vw;
-    margin-right: -5vw;
-    max-width: calc(100% + 10vw);
-  }
 }
