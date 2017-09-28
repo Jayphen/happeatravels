@@ -1,0 +1,13 @@
+{{ $url := .Get "url"}}
+{{ $alt := .Get "alt" }}
+
+<div class="mw8 center mt4 blog-post--image-block">
+  <div class="dib">
+    <img style="pointer-events: none" src='{{$url}}mw=1200' alt="{{ $alt }}">
+    {{ with .Get "caption" }}
+      <div class="center tc nt1 f6 gray">
+        {{.}}
+      </div>
+    {{ end }}
+  </div>
+</div>
