@@ -1,0 +1,40 @@
+<!--
+  
+Shortcode example
+=================
+
+Gallery shortcode requires the gallery type following by a list of
+space-delimited image definitions
+
+=================
+
+Params:
+  "galleryType"
+  "height, width, url, alt, title"
+
+{{/*
+% gallery "2x2" "1333,2000,https://www.datocms-assets.com/3352/1506529481-dsc09358.jpg?,A tiny baby waterfall,null" "1333,2000,https://www.datocms-assets.com/3352/1506529480-dsc09367.jpg?,Looking down over the falls with turquoise water,null" "1333,2000,https://www.datocms-assets.com/3352/1506529481-dsc09377.jpg?,The falls and visitor bridge,null" "1333,2000,https://www.datocms-assets.com/3352/1506529480-dsc09306.jpg?,A nice little spot along the water's edge,null" %
+*/}}
+
+-->
+
+<!-- Shortcode below-->
+
+<!-- Grab the gallery type -->
+{{ $type := .Get 0 }}
+
+
+<div class="gallery mw8 center blog-post--gallery gallery--{{ $type }}">
+  {{ $.Scratch.Set "landscape" 0}}
+  {{ range $element := after 1 $.Params }}
+  {{ $items := split $element "," }}
+    {{ $height := mul (int (index $items 0)) 1.0 }}
+    {{ $width := mul (int (index $items 1)) 1.0 }}
+    {{ $isLandscape := gt $width $height}}
+    {{ $counter := $.Scratch.Get "landscape"}}
+    <div class="gallery-item gallery-item--{{- if not $isLandscape -}} portrait {{- else -}} landscape gallery-item--landscape--{{$counter}}{{ end }}">
+      <img src="{{index $items 2}}w=1200&fit=crop" data-lightbox alt="{{index $items 3}}">
+    </div>
+    {{ if gt $width $height }}{{ $.Scratch.Add "landscape" 1 }}{{ end }}
+  {{ end }}
+</div>
