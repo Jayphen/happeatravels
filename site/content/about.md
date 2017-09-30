@@ -103,7 +103,7 @@ content:
         attributes:
           name: 'twitter:image'
           content: 'https://www.datocms-assets.com/3352/1506359213-dsc00753.jpg?'
-    position: 3
+    position: 0
     caption: Here we are with our koala baby
     image:
       format: jpg

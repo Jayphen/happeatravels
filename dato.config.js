@@ -19,9 +19,11 @@ module.exports = (dato, root, i18n) => {
             content.push(`${val.content}`);
             break;
           case "single_image":
-            content.push(outdent`
-              {{% single_image url="${val.image.url}" caption="${val.caption ? val.caption : null}" alt="${val.image.alt === null ? '' : val.image.alt}" %}}
-            `)
+            if (val.url) {
+                content.push(outdent`
+                  {{% single_image url="${val.image.url}" caption="${val.caption ? val.caption : null}" alt="${val.image.alt === null ? '' : val.image.alt}" %}}
+                `)
+            }
             break;
           case "gallery":
             // For each gallery item, create a string of values delimited by commas
@@ -32,9 +34,11 @@ module.exports = (dato, root, i18n) => {
               galleryItems.push(`${galleryItem.height},${galleryItem.width},${galleryItem.url},${galleryItem.alt},${galleryItem.title}`);             
             })
             let items = galleryItems.join('" "');
-            content.push(outdent`
-              {{% gallery "${val.galleryType.galleryType}" "${items}" %}}
-            `)
+            if (val.galleryType) {
+                content.push(outdent`
+                  {{% gallery "${val.galleryType.galleryType}" "${items}" %}}
+                `)
+            }
         }
       });
 

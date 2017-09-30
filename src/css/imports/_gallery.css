@@ -5,8 +5,8 @@
 .blog-post--gallery {
   display: grid;
   grid-gap: 4px;
+  margin-bottom: 4px;
   grid-template-columns: 50% 50%;
-  max-height: 35em;
   grid-template-areas:
     "landscape0 portrait"
     "landscape1 portrait";
@@ -26,6 +26,10 @@
     "portrait landscape1";
 }
 
+.gallery-item--portrait {
+  grid-area: portrait;
+}
+
 .gallery--3x3 {
   grid-template-columns: repeat(auto-fill, minmax(32%, 1fr));
   grid-template-rows: repeat(auto-fill, minmax(120px, 1fr));
@@ -33,29 +37,28 @@
     grid-template-rows: repeat(auto-fill, minmax(20vw, 1fr));
   }
   grid-template-areas: unset;
-  & .grid-item {
+  & .gallery-item {
     grid-area: unset !important;
   }
 }
 
 .gallery--2x2 {
-  grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(300px, 1fr));
+  grid-template-columns: repeat(auto-fill, minmax(42%, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(200px, 35vh));
   @media (--breakpoint-not-small) {
-    grid-template-columns: repeat(auto-fill, minmax(1fr, 1fr));
-    grid-template-rows: repeat(auto-fill, minmax(500px, 1fr));
+    grid-template-rows: none;
   }
   grid-template-areas: unset;
-  & .grid-item {
+  & .gallery-item {
     grid-area: unset !important;
   }
 }
 
 .gallery--1x1 {
   grid-template-columns: repeat(auto-fill, minmax(100%, 1fr));
-  grid-template-rows: repeat(auto-fill, minmax(1fr, 1fr));
+  grid-template-rows: repeat(auto-fill, minmax(400px, 100vh));
   grid-template-areas: unset;
-  & .grid-item {
+  & .gallery-item {
     grid-area: unset !important;
   }
 }
