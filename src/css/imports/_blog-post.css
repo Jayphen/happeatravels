@@ -6,3 +6,6 @@ p + .blog-post--gallery,
 .blog-post--intro-block {
   margin-top: var(--spacing-large);
 }
+.blog-post--intro {
+  margin-bottom: var(--spacing-large);
+}
