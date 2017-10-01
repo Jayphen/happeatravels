@@ -103,7 +103,7 @@ content:
         attributes:
           name: 'twitter:image'
           content: 'https://www.datocms-assets.com/3352/1506359213-dsc00753.jpg?'
-    position: 0
+    position: -2
     caption: Here we are with our koala baby
     image:
       format: jpg
@@ -159,7 +159,7 @@ content:
         attributes:
           property: 'og:site_name'
           content: Happea Travels
-    position: 7
+    position: 6
     content: |-
 
 
