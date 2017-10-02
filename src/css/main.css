@@ -181,7 +181,7 @@ hr {
   position: relative;
   max-width: 64rem;
   @extend .georgia;
-  
+
   & > p,
   & h1,
   & h2,
