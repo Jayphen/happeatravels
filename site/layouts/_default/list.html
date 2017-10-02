@@ -2,7 +2,10 @@
   {{ if isset .Data "Singular" }}
     <h1 class="center tc pa0 mt5 mw6">{{ if (eq .Data.Singular "author") }}Posts by {{else}} Posts in {{end}}<span class="bg-washed-yellow pa2">{{ .Data.Term }}</span></h1>
   {{ end }}
-  {{ range .Data.Pages }}
+
+  {{ $paginator := .Paginate (.Data.Pages) 4 }}
+
+  {{ range $paginator.Pages }}
   <div class="mw9 mt4 center mb5 flex flex-wrap flex-nowrap-ns justify-center">
     <div class="pa2 mw6-ns">
       <a href="{{.Permalink}}">
@@ -14,4 +17,7 @@
     </div>
   </div>
   {{ end }}
+  <div class="mb5">
+    {{ partial "pagination" . }}
+  </div>
 {{ end }}

@@ -8,6 +8,7 @@
 
       {{ with .Params.feature_image_data}}
         <!-- Featured Image Block -->
+        <!--Replace this with lazyloading for a better experience-->
         {{ $height := mul .height 1.0 }}
         {{ $width := mul .width 1.0 }}
         <div class="mw8 center blog-post--feature-image mt4 relative">
@@ -17,7 +18,7 @@
       {{ end }}
 
       {{ if isset .Params "intro" }}
-      <div class="flex center mw8 flex-wrap-reverse">
+      <div class="flex center mw8 flex-wrap-reverse"> <!-- Intro section -->
         <div class="mw8 ph3 blog-post--intro-block">
           <div class="blog-post--intro georgia nested-links measure-wide">{{.Params.intro | markdownify}}</div>
         </div>
@@ -33,63 +34,18 @@
           </div>
         </a>
       </div>
+      <!--Show a lil wavy dash emoji as a separator-->
       <div class="mw8 center ph3">{{ ":wavy_dash:" | emojify}}</div>
       {{ end }}
 
       <div class="blog-post--body nested-links">
+        <!--The content is already formatted by the dato script.-->
+        <!--Check shortcodes for content formatting.-->
         {{ .Content }}
       </div>
 
-
-      <!-- Loop through blocks and display them -->
-
-      <!-- Text block -->
-      <!-- Image block -->
-      <!-- Intro block -->
-
-      <!-- 
-        {{ range .Params.content }}
-        {{ if eq .itemType "text_block" }}
-          <div class="mw8 center ph3 relative blog-post--text-block">
-            <div class="georgia nested-links measure-wide">{{ .content | markdownify }}</div>
-          </div>
-        {{ else if eq .itemType "single_image"}}
-          <div class="mw8 center mt4 blog-post--image-block">
-            <div class="dib">
-              <img style="pointer-events: none" src="{{.image.url}}mw=1200">
-              <div class="center tc nt1 f6 gray">
-                {{.caption}}
-              </div>
-            </div>
-          </div>
-        {{ else if eq .itemType "quote_block" }}
-          <blockquote>
-            {{ .quote }}
-            <footer>
-              <cite>{{ .author }}</cite>
-            </footer>
-          </blockquote>
-        {{ else if eq .itemType "gallery" }}
-          <div class="gallery mw8 center blog-post--gallery gallery--{{.galleryType.galleryType}}">
-            {{ $.Scratch.Set "landscape" 0}}
-            {{ range .gallery }}
-              {{ $height := mul .height 1.0 }}
-              {{ $width := mul .width 1.0 }}
-              {{ $isLandscape := gt $width $height}}
-              {{ $counter := $.Scratch.Get "landscape"}}
-              <div class="gallery-item gallery-item--{{- if not $isLandscape -}} portrait {{- else -}} landscape gallery-item--landscape--{{$counter}}{{ end }}">
-                <img src="{{.url}}w=1200&fit=crop" data-lightbox alt="{{.alt}}">
-              </div>
-              {{ if gt $width $height }}{{ $.Scratch.Add "landscape" 1 }}{{ end }}
-            {{ end }}
-          </div>
-        {{ end }}
-      {{ end }}
-        -->
-
-      <!-- End loop -->
-
       <div class="disqus-comments mt4 mw8 center ph3 relative">
+        <!--If not development environment, grab the internal disqus tmpl-->
         {{ if ne (getenv "HUGO_ENV") "development" }}
           {{ template "_internal/disqus.html" . }}
         {{ end }}
