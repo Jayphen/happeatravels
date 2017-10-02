@@ -1,0 +1,20 @@
+.pagination .disabled {
+  & a {
+    opacity: 0.2;
+    cursor: not-allowed;
+  }
+  & a:hover {
+    opacity: 0.2;
+  }
+}
+.pagination .active {
+  & a {
+    border-bottom: 2px solid var(--pink);
+  }
+  & a:hover {
+    opacity: 1;
+  }
+}
+.pagination li {
+  flex-basis: 2em;
+}

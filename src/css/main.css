@@ -6,6 +6,7 @@
 @import "imports/_tag.css";
 @import "imports/_gallery.css";
 @import "imports/_blog-post.css";
+@import "imports/_pagination.css";
 
 :root {
   --green: #89B6A5;
