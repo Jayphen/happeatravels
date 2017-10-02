@@ -3,3 +3,4 @@ public/
 .env
 site/content/post/*
 dist
+.lvimrc
