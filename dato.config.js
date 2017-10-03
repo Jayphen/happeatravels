@@ -19,10 +19,11 @@ module.exports = (dato, root, i18n) => {
             content.push(`${val.content}`);
             break;
           case "single_image":
-            if (val.url) {
-                content.push(outdent`
-                  {{% single_image url="${val.image.url}" caption="${val.caption ? val.caption : null}" alt="${val.image.alt === null ? '' : val.image.alt}" %}}
-                `)
+            if (val.image && val.image.url) {
+              let imgAlt = () => val.image.alt ? val.image.alt : val.caption ? val.caption : '';
+              content.push(outdent`
+                {{% single_image url="${val.image.url}" caption="${val.caption ? val.caption : ''}" alt="${imgAlt()}" %}}
+              `)
             }
             break;
           case "gallery":
@@ -31,7 +32,7 @@ module.exports = (dato, root, i18n) => {
             // Join the array by wrapping the strings in quotes
             let galleryItems = [];
             val.gallery.forEach(galleryItem => {
-              galleryItems.push(`${galleryItem.height},${galleryItem.width},${galleryItem.url},${galleryItem.alt},${galleryItem.title}`);             
+              galleryItems.push(`${galleryItem.height},${galleryItem.width},${galleryItem.url},${galleryItem.alt},${galleryItem.title}`);
             })
             let items = galleryItems.join('" "');
             if (val.galleryType) {
