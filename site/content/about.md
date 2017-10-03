@@ -51,7 +51,7 @@ content:
     content: 'Hello, Hola, Guten Tag, Ciao, Bonjour, Szia and Xin Cháo, fellow citizens of the world, travel enthusiasts and travellers to be.'
   - id: '102743'
     itemType: single_image
-    updatedAt: '2017-09-25T17:07:17.379Z'
+    updatedAt: '2017-10-03T09:25:53.823Z'
     seoMetaTags:
       - tagName: title
         content: Happea Travels - a travel blog by Ina and Jayphen
@@ -82,7 +82,7 @@ content:
       - tagName: meta
         attributes:
           property: 'article:modified_time'
-          content: '2017-09-25T17:07:17Z'
+          content: '2017-10-03T09:25:53Z'
       - tagName: meta
         attributes:
           property: 'og:locale'
@@ -98,21 +98,21 @@ content:
       - tagName: meta
         attributes:
           property: 'og:image'
-          content: 'https://www.datocms-assets.com/3352/1506359213-dsc00753.jpg?'
+          content: 'https://www.datocms-assets.com/3352/1507022738-ina-and-jayphen-holding-a-koala.jpg?'
       - tagName: meta
         attributes:
           name: 'twitter:image'
-          content: 'https://www.datocms-assets.com/3352/1506359213-dsc00753.jpg?'
+          content: 'https://www.datocms-assets.com/3352/1507022738-ina-and-jayphen-holding-a-koala.jpg?'
     position: -2
     caption: Here we are with our koala baby
     image:
       format: jpg
-      size: 877290
-      width: 1200
-      height: 1500
+      size: 200431
+      width: 960
+      height: 1200
       title: null
-      alt: null
-      url: 'https://www.datocms-assets.com/3352/1506359213-dsc00753.jpg?'
+      alt: Jayphen and Ina holding a koala in Australia
+      url: 'https://www.datocms-assets.com/3352/1507022738-ina-and-jayphen-holding-a-koala.jpg?'
   - id: '102742'
     itemType: text_block
     updatedAt: '2017-09-25T17:06:43.766Z'
