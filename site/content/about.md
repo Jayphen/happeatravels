@@ -98,11 +98,11 @@ content:
       - tagName: meta
         attributes:
           property: 'og:image'
-          content: 'https://www.datocms-assets.com/3352/1507022738-ina-and-jayphen-holding-a-koala.jpg?'
+          content: 'https://www.datocms-assets.com/3352/1507022738-ina-and-jayphen-holding-a-koala.jpg'
       - tagName: meta
         attributes:
           name: 'twitter:image'
-          content: 'https://www.datocms-assets.com/3352/1507022738-ina-and-jayphen-holding-a-koala.jpg?'
+          content: 'https://www.datocms-assets.com/3352/1507022738-ina-and-jayphen-holding-a-koala.jpg'
     position: -2
     caption: Here we are with our koala baby
     image:
@@ -112,7 +112,7 @@ content:
       height: 1200
       title: null
       alt: Jayphen and Ina holding a koala in Australia
-      url: 'https://www.datocms-assets.com/3352/1507022738-ina-and-jayphen-holding-a-koala.jpg?'
+      url: 'https://www.datocms-assets.com/3352/1507022738-ina-and-jayphen-holding-a-koala.jpg'
   - id: '102742'
     itemType: text_block
     updatedAt: '2017-09-25T17:06:43.766Z'
