@@ -33,7 +33,7 @@ Params:
     {{ $isLandscape := gt $width $height}}
     {{ $counter := $.Scratch.Get "landscape"}}
     <div class="gallery-item gallery-item--{{- if not $isLandscape -}} portrait {{- else -}} landscape gallery-item--landscape--{{$counter}}{{ end }}">
-      <img src="{{index $items 2}}?w=1200&fit=crop" data-lightbox alt="{{index $items 3}}">
+      <img src="{{index $items 2}}?w=1200&auto=format&fit=crop" data-lightbox alt="{{index $items 3}}">
     </div>
     {{ if gt $width $height }}{{ $.Scratch.Add "landscape" 1 }}{{ end }}
   {{ end }}

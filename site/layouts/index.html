@@ -2,7 +2,7 @@
   {{ range first 1 (where .Data.Pages "Section" "post") }}
     <div class="author--{{.Params.author}} hero-post overflow-hidden aspect-ratio aspect-ratio--16x9">
       <a class="link" href="{{.RelPermalink}}">
-        <div class="cover aspect-ratio--object" style="background: url('{{.Params.feature_image_data.url}}'), url('{{.Params.feature_image_data.url}}?blur=100&w=1000')">
+        <div class="cover aspect-ratio--object" style="background: url('{{.Params.feature_image_data.url}}?auto=format'), url('{{.Params.feature_image_data.url}}?blur=100&w=1000')">
           <div class="aspect-ratio--object bg-black-20 hover-bg-black-10 bg-animate"></div>
         </div>
         <div style="pointer-events: none" class="mt5-m flex aspect-ratio--object white">
@@ -30,7 +30,7 @@
     {{ range after 1 (first 10 (where .Data.Pages "Section" "post") ) }}
     <div class="mb5 ph4">
       <div class="center nb3 mw6">
-        <a href="{{.Permalink}}"><img alt="" src="{{ .Params.feature_image_data.url }}?h=90&w=550&fit=crop&crop=edges"></a>
+        <a href="{{.Permalink}}"><img alt="" src="{{ .Params.feature_image_data.url }}?h=90&w=550&auto=format&fit=crop&crop=edges"></a>
       </div>
       <div class="mw6">
         {{ .Render "summary" }}

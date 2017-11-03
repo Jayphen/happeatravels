@@ -3,7 +3,7 @@
 
 <div class="mw8 center mt4 blog-post--image-block">
   <div class="dib">
-    <img style="pointer-events: none" src='{{$url}}?w=1200' alt="{{ with $alt }}{{ . }}{{ end }}">
+    <img style="pointer-events: none" src='{{$url}}?auto=format&w=1200' alt="{{ with $alt }}{{ . }}{{ end }}">
     {{ with .Get "caption" }}
       <div class="center tc nt1 f6 gray">
         {{.}}
